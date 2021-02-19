@@ -1,13 +1,17 @@
 import { Link } from 'react-router-dom';
+import React from 'react';
 import '../Page.css';
 import { Dropdown } from 'semantic-ui-react';
 
 const Menu = () => {
+  /* const [show, setShow] = React.useState(false);
+  const hidden = { height: show ? '100px' : '0' }; */
+
   return (
     <div>
       <ul className='nav'>
         <li>
-          <Link to='/works'>Works</Link>
+          <Link to='/news'>News</Link>
         </li>
         <button
           /* onClick={() => {
@@ -15,22 +19,32 @@ const Menu = () => {
               container[0].style.display = 'block';
             }
           }} */
+          //onClick={() => setShow(!show)}
           className='dropdown-btn'
         >
-          Works
+          <Link to='/works'>Works</Link>
         </button>
         <div className='dropdown-container'>
-          <a href='#'>Link 1</a>
-          <a href='#'>Link 2</a>
-          <a href='#'>Link 3</a>
+          <ul className='nav' id='rolldown'>
+            <li>
+              <a href='#'>Link 1</a>
+            </li>
+            <li>
+              <a href='#'>Link 2</a>
+            </li>
+            <li>
+              <a href='#'>Link 3</a>
+            </li>
+            <li>
+              <a href='#'>Link 4</a>
+            </li>
+          </ul>
         </div>
 
         <li>
           <Link to='/biography'>Biography</Link>
         </li>
-        <li>
-          <Link to='/news'>News</Link>
-        </li>
+
         <li>
           <Link to='/cv'>CV</Link>
         </li>

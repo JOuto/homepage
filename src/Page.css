@@ -63,10 +63,9 @@ ul.nav li {
 .menu {
   float: left;
   padding-left: 25px;
-  width: 8em;
+  width: 30%;
 }
 .content {
-  float: right;
   padding: 30px;
   text-align: center;
 }
@@ -74,6 +73,39 @@ ul.nav li {
   padding: 0px;
 }
 
+.contentWrapper {
+  float: right;
+  text-align: center;
+  width: 70%;
+  padding-top: 200px;
+}
+.subscribe-btn {
+  border-radius: 0;
+}
+/* IMAGEGALLERY */
+.galleryWrapper {
+  text-align: center;
+}
+.galleryButton {
+  border: none;
+  background: none;
+  border-radius: 0;
+  height: 40px;
+  border: solid 0.02px white;
+}
+.galleryButton:focus {
+  background: none;
+  outline: none;
+  border: none;
+}
+.galleryButton:hover {
+  border: solid 0.02px black;
+  height: 40px;
+}
+/*CV*/
+.cvWrapper {
+  margin-right: 110px;
+}
 /* .rollDown {
   animation-name: rollDown;
   animation-fill-mode: both;

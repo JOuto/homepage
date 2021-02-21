@@ -1,0 +1,4 @@
+const images = [
+    {title: "1", imgUrl: "123"}, {title: "2", imgUrl: "1234"}, {title: "3", imgUrl: "12345"}, {title: "4", imgUrl: "123456"}}]
+]
+export default images;

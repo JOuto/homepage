@@ -4,14 +4,11 @@ import { Switch, Route } from 'react-router-dom';
 import News from './Components/News';
 import './Page.css';
 import logo from './Img/logo.png';
+import ImageGallery from './Components/ImageGallery';
+import Cv from './Components/CvPage';
 
 const App = () => {
   var dropdown = document.getElementsByClassName('dropdown-btn');
-  var container = document.getElementsByClassName('dropdown-container');
-  console.log(container);
-
-  console.log(dropdown);
-
   useEffect(() => {
     var i;
     for (i = 0; i < dropdown.length; i++) {
@@ -19,7 +16,7 @@ const App = () => {
         //this.classList.toggle('active');
         console.log('click');
         var dropdownContent = this.nextElementSibling;
-        var x = document.getElementById('rolldown').childElementCount;
+        const x = dropdownContent.firstChild.childElementCount;
 
         console.log(x);
 
@@ -35,7 +32,7 @@ const App = () => {
       });
     }
   }, [dropdown]);
-  console.log(logo);
+
   return (
     <div>
       <div className='menu'>
@@ -44,12 +41,20 @@ const App = () => {
         </div>
         <Menu />
       </div>
-      <div className='content'>
-        <Switch>
-          <Route path='/news'>
-            <News />
-          </Route>
-        </Switch>
+      <div className='contentWrapper'>
+        <div className='content'>
+          <Switch>
+            <Route path='/news'>
+              <News />
+            </Route>
+            <Route path='/works/2018'>
+              <ImageGallery />
+            </Route>
+            <Route path='/cv'>
+              <Cv />
+            </Route>
+          </Switch>
+        </div>
       </div>
     </div>
   );

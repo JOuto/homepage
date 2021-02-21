@@ -1,13 +1,16 @@
 import Menu from './Components/Menu';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import News from './Components/News';
 import './Page.css';
 import logo from './Img/logo.png';
 import ImageGallery from './Components/ImageGallery';
 import Cv from './Components/CvPage';
+import puddle from './Img/puddle.png';
+import blueSpot from './Img/blueSpot.png';
 
 const App = () => {
+  const [showBlue, setShowBlue] = useState(false);
   var dropdown = document.getElementsByClassName('dropdown-btn');
   useEffect(() => {
     var i;
@@ -33,6 +36,7 @@ const App = () => {
     }
   }, [dropdown]);
 
+  const moiDisplay = showBlue ? 'block' : 'none';
   return (
     <div>
       <div className='menu'>
@@ -40,6 +44,28 @@ const App = () => {
           <img src={logo} height='150px' width='150px' alt='logo'></img>
         </div>
         <Menu />
+        <div className='puddle'>
+          <img src={puddle} alt='puddle' height='150px'></img>
+        </div>
+        <div
+          className='spot'
+          onMouseEnter={() => setShowBlue(true)}
+          onMouseLeave={() => setShowBlue(false)}
+        >
+          <img src={blueSpot} alt='puddle' height='100px'></img>
+          <div
+            style={{
+              color: 'white',
+              display: moiDisplay,
+              position: 'relative',
+
+              top: '-60px',
+              left: '46px',
+            }}
+          >
+            !
+          </div>
+        </div>
       </div>
       <div className='contentWrapper'>
         <div className='content'>

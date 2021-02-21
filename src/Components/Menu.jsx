@@ -74,7 +74,7 @@ const Menu = () => {
           </ul>
         </div>
         <li>
-          <p>Contact</p>
+          <a href='#'>Contact</a>
         </li>
       </ul>
     </div>

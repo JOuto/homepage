@@ -1,12 +1,114 @@
+/* MAIN */
+
+.Apper {
+  overflow: hidden;
+
+  min-height: 100vh;
+  padding-bottom: 100px;
+  position: relative;
+  display: block;
+  background-color: rgb(240, 240, 240);
+}
+.flexContainer {
+  height: 800px;
+  /* display: flex;
+  flex-direction: column; */
+}
+/* LOGO */
+.logo {
+  text-align: center;
+  background-color: white;
+  padding-bottom: 30px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  margin-bottom: 10px;
+  width: 20%;
+}
+.logo:hover {
+  /* opacity: 0; */
+  filter: hue-rotate(180deg);
+}
+.testCube {
+  background-color: white;
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 79%;
+  height: 234.444px;
+  padding: 25px;
+  text-align: center;
+}
+.testCube2 {
+  position: absolute;
+  /* bottom: 120px; */
+  clear: both;
+  right: 0;
+  background-color: white;
+}
+
+/*CONTENT */
+
+.contentWrapper {
+  background-color: white;
+  padding-left: 30px;
+  padding-top: 70px;
+  text-align: center;
+  float: right;
+  height: 100%;
+
+  text-align: center;
+  width: 70%;
+}
+.subscribe-btn {
+  border-radius: 0;
+}
+
+/* IMAGEGALLERY */
+
+.galleryWrapper {
+  text-align: center;
+  background-color: white;
+}
+.galleryButton {
+  border: none;
+  background: none;
+  border-radius: 0;
+  height: 40px;
+  border: solid 0.02px white;
+}
+.galleryButton:focus {
+  background: none;
+  outline: none;
+  border: none;
+}
+.galleryButton:hover {
+  border: solid 0.02px black;
+  height: 40px;
+}
+/* MENU */
+.menu {
+  background-color: white;
+  height: 100%;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  padding-left: 25px;
+  width: 29%;
+}
+
 ul.nav {
+  position: relative;
   list-style-type: none;
   padding-left: 0;
   margin-left: 0;
-  background-color: white;
 }
 ul.nav a {
-  text-decoration: none;
+  z-index: 4;
 
+  text-decoration: none;
   font-weight: 600;
   font-style: normal;
   text-transform: none;
@@ -33,16 +135,25 @@ ul.nav a:active {
   transition-property: all;
   transition-duration: 0.5s;
 }
+.puddle {
+  position: absolute;
+  left: 50px;
+  top: 750px;
+  z-index: 0;
+}
 .puddle:hover,
 .spot:hover {
   opacity: 0.5;
   filter: hue-rotate(90deg);
+  z-index: 0;
 }
 .spot {
+  float: right;
   padding-top: 50px;
 }
 ul.nav li {
   display: block;
+  z-index: 5;
 }
 .dropdown-btn {
   padding: 0px;
@@ -81,58 +192,23 @@ ul.nav li {
   padding-left: 15px;
 }
 
-.menu {
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  float: left;
-  padding-left: 25px;
-  width: 30%;
-}
-.content {
-  padding: 30px;
-  text-align: center;
-}
-.logo {
-  padding-bottom: 30px;
-  transition-property: all;
-  transition-duration: 0.5s;
-}
-.logo:hover {
-  filter: hue-rotate(180deg);
-}
-
-.contentWrapper {
-  float: right;
-  text-align: center;
-  width: 70%;
-  padding-top: 200px;
-}
-.subscribe-btn {
-  border-radius: 0;
-}
-/* IMAGEGALLERY */
-.galleryWrapper {
-  text-align: center;
-}
-.galleryButton {
-  border: none;
-  background: none;
-  border-radius: 0;
-  height: 40px;
-  border: solid 0.02px white;
-}
-.galleryButton:focus {
-  background: none;
-  outline: none;
-  border: none;
-}
-.galleryButton:hover {
-  border: solid 0.02px black;
-  height: 40px;
-}
 /*CV*/
 .cvWrapper {
-  margin-right: 110px;
+  /* margin-right: 110px; */
+  text-align: center;
+}
+.footerWrapper {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  border-top: solid black 1px;
+  clear: both;
+}
+.footer {
+  text-align: left;
+  padding: 45px;
 }
 /* .rollDown {
   animation-name: rollDown;

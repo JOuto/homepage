@@ -10,7 +10,7 @@ import puddle from './Img/puddle.png';
 import blueSpot from './Img/blueSpot.png';
 
 const App = () => {
-  const [showBlue, setShowBlue] = useState(false);
+  const [showLogo, setShowLogo] = useState(false);
   var dropdown = document.getElementsByClassName('dropdown-btn');
   useEffect(() => {
     var i;
@@ -36,51 +36,50 @@ const App = () => {
     }
   }, [dropdown]);
 
-  const moiDisplay = showBlue ? 'block' : 'none';
+  const logoDisplay = showLogo ? '1' : '0';
   return (
-    <div>
-      <div className='menu'>
-        <div className='logo'>
-          <img src={logo} height='150px' width='150px' alt='logo'></img>
+    <div className='Apper'>
+      <div
+        /* style={{ opacity: logoDisplay }} */
+        className='logo'
+        /* onMouseEnter={() => setShowLogo(false)}
+        onClick={() => setShowLogo(true)}
+        onMouseLeave={() => setShowLogo(true)} */
+      >
+        <img src={logo} height='200px' alt='logo'></img>
+      </div>
+      <div className='testCube'>
+        <Cv />
+      </div>
+      <div className='flexContainer'>
+        <div className='menu'>
+          <Menu />
+          <div className='puddle'>
+            <img src={puddle} alt='puddle' height='150px'></img>
+          </div>
+          <div className='spot'>
+            <img src={blueSpot} alt='puddle' height='100px'></img>
+          </div>
         </div>
-        <Menu />
-        <div className='puddle'>
-          <img src={puddle} alt='puddle' height='150px'></img>
-        </div>
-        <div
-          className='spot'
-          onMouseEnter={() => setShowBlue(true)}
-          onMouseLeave={() => setShowBlue(false)}
-        >
-          <img src={blueSpot} alt='puddle' height='100px'></img>
-          <div
-            style={{
-              color: 'white',
-              display: moiDisplay,
-              position: 'relative',
-
-              top: '-60px',
-              left: '46px',
-            }}
-          >
-            !
+        {/* <div className='testCube2'></div> */}
+        <div className='contentWrapper'>
+          <div className='content'>
+            <Switch>
+              <Route path='/news'>
+                <News />
+              </Route>
+              <Route path='/works/2018'>
+                <ImageGallery />
+              </Route>
+              <Route path='/cv'>
+                <Cv />
+              </Route>
+            </Switch>
           </div>
         </div>
       </div>
-      <div className='contentWrapper'>
-        <div className='content'>
-          <Switch>
-            <Route path='/news'>
-              <News />
-            </Route>
-            <Route path='/works/2018'>
-              <ImageGallery />
-            </Route>
-            <Route path='/cv'>
-              <Cv />
-            </Route>
-          </Switch>
-        </div>
+      <div className='footerWrapper'>
+        <footer className='footer'>Jouni Toni 2021</footer>
       </div>
     </div>
   );

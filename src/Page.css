@@ -49,6 +49,26 @@
   background-color: white;
 }
 
+/* IMAGECOLLECTION */
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  align-content: flex-start;
+}
+.flexItem {
+  margin: 10px;
+  border: solid 1px black;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+
+  background-color: white;
+}
+
 /*CONTENT */
 
 .contentWrapper {
@@ -71,6 +91,31 @@
 .galleryWrapper {
   text-align: center;
   background-color: white;
+}
+.fullScreenDimmer {
+  /* display: none; */
+  /* display: block; */
+  background-color: black;
+  position: absolute;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  padding: 50px;
+}
+.fullScreenContent {
+  overflow: scroll;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  height: 80%;
+  width: 80%;
+  background-color: white;
+  padding: 20px;
+
+  z-index: 10;
 }
 .galleryButton {
   border: none;

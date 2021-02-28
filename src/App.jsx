@@ -8,6 +8,7 @@ import ImageGallery from './Components/ImageGallery';
 import Cv from './Components/CvPage';
 import puddle from './Img/puddle.png';
 import blueSpot from './Img/blueSpot.png';
+import ImageCollection from './Components/ImageCollection';
 
 const App = () => {
   const [showLogo, setShowLogo] = useState(false);
@@ -73,6 +74,9 @@ const App = () => {
               </Route>
               <Route path='/cv'>
                 <Cv />
+              </Route>
+              <Route path='/works/2017'>
+                <ImageCollection />
               </Route>
             </Switch>
           </div>

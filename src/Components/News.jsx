@@ -25,6 +25,7 @@ const News = () => {
           <input
             name='email'
             type='text'
+            placeholder='email'
             value={email}
             onChange={handleChange}
           ></input>
@@ -32,7 +33,7 @@ const News = () => {
             Subscribe{' '}
           </button>
         </form>
-        <input
+        {/*  <input
           value={text}
           name='testiteksti'
           placeholder='testiteksti'
@@ -42,9 +43,13 @@ const News = () => {
             setText(event.target.value);
             console.log(text);
           }}
-        ></input>
+        ></input> */}
       </div>
       {message && <p>Subscribed!!</p>}
+      <div style={{ marginTop: '100px' }}>
+        {' '}
+        <p>Uusimmat uutiset</p>
+      </div>
     </div>
   );
 };

@@ -34,7 +34,7 @@ const Menu = () => {
               <Link to='/works/2017'>2017</Link>
             </li>
             <li>
-              <a href='#'>2016</a>
+              <Link to='/testi'>2016</Link>
             </li>
             <li>
               <a href='#'>2015</a>

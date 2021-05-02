@@ -9,6 +9,7 @@ import Cv from './Components/CvPage';
 import puddle from './Img/puddle.png';
 import blueSpot from './Img/blueSpot.png';
 import ImageCollection from './Components/ImageCollection';
+import Testi from './Components/Testi';
 
 const App = () => {
   const [showLogo, setShowLogo] = useState(false);
@@ -37,21 +38,13 @@ const App = () => {
     }
   }, [dropdown]);
 
-  const logoDisplay = showLogo ? '1' : '0';
+  /* const logoDisplay = showLogo ? '1' : '0'; */
   return (
     <div className='Apper'>
-      <div
-        /* style={{ opacity: logoDisplay }} */
-        className='logo'
-        /* onMouseEnter={() => setShowLogo(false)}
-        onClick={() => setShowLogo(true)}
-        onMouseLeave={() => setShowLogo(true)} */
-      >
+      <div className='logo'>
         <img src={logo} height='200px' alt='logo'></img>
       </div>
-      <div className='testCube'>
-        <Cv />
-      </div>
+      <div className='testCube'>{/* <Cv /> */}</div>
       <div className='flexContainer'>
         <div className='menu'>
           <Menu />
@@ -67,7 +60,9 @@ const App = () => {
           <div className='content'>
             <Switch>
               <Route path='/news'>
-                <News />
+                <div style={{ position: 'absolute', top: '40px', left: '50%' }}>
+                  <News />
+                </div>
               </Route>
               <Route path='/works/2018'>
                 <ImageGallery />
@@ -77,6 +72,9 @@ const App = () => {
               </Route>
               <Route path='/works/2017'>
                 <ImageCollection />
+              </Route>
+              <Route path='/testi'>
+                <Testi />
               </Route>
             </Switch>
           </div>

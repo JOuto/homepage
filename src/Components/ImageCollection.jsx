@@ -31,8 +31,8 @@ const ImageCollection = () => {
           fullScreenView={fullScreenView}
         />
         {images &&
-          images.map((image) => (
-            <div className='flexItem' >
+          images.map((image, i) => (
+            <div className='flexItem' key={i}>
               {imageListItem(image.imgUrl)}
             </div>
           ))}

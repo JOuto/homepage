@@ -34,7 +34,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  overflow: scroll;
+  /* overflow: scroll; */
   overflow-x: hidden;
   width: 79%;
   height: 234.444px;
@@ -57,6 +57,7 @@
   flex-wrap: wrap;
   background-color: white;
   align-content: flex-start;
+  overflow-y: scroll;
 }
 .flexItem {
   margin: 20px;
@@ -70,7 +71,8 @@
 }
 
 /*CONTENT */
-
+.content {
+}
 .contentWrapper {
   background-color: white;
   padding-left: 30px;
@@ -240,8 +242,11 @@ ul.nav li {
 /*CV*/
 .cvWrapper {
   /* margin-right: 110px; */
-  text-align: center;
+  text-align: left;
 }
+/* .cvWrapper span {
+  
+} */
 .footerWrapper {
   background-color: white;
   position: absolute;

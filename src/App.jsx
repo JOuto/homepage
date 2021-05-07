@@ -10,6 +10,7 @@ import puddle from './Img/puddle.png';
 import blueSpot from './Img/blueSpot.png';
 import ImageCollection from './Components/ImageCollection';
 import Testi from './Components/Testi';
+import ContactPage from './Components/Contact';
 
 const App = () => {
   const [showLogo, setShowLogo] = useState(false);
@@ -59,6 +60,11 @@ const App = () => {
         <div className='contentWrapper'>
           <div className='content'>
             <Switch>
+              <Route path='/contact'>
+                <div style={{ position: 'absolute', top: '40px', left: '50%' }}>
+                  <ContactPage />
+                </div>
+              </Route>
               <Route path='/news'>
                 <div style={{ position: 'absolute', top: '40px', left: '50%' }}>
                   <News />

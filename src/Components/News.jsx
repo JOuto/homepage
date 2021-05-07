@@ -1,4 +1,5 @@
 import React from 'react';
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
 
 const News = () => {
   const [email, setEmail] = React.useState('');
@@ -21,7 +22,8 @@ const News = () => {
     <div>
       Subscribe for newsletter
       <div type='submit' onSubmit={subscribe}>
-        <form>
+        <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
+        {/* <form>
           <input
             name='email'
             type='text'
@@ -32,7 +34,7 @@ const News = () => {
           <button className='subscribe-btn' type='submit'>
             Subscribe{' '}
           </button>
-        </form>
+        </form> */}
         {/*  <input
           value={text}
           name='testiteksti'

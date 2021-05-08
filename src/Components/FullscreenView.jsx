@@ -9,7 +9,7 @@ const FullscreenView = ({ image, setFullScreenView, fullScreenView }) => {
   };
 
   return (
-    <div>
+    <div className='fullScreenWrapper'>
       <div className='fullScreenDimmer' style={displayStyle}></div>
       <div className='fullScreenContent' style={displayStyle}>
         {/* <button

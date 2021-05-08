@@ -43,9 +43,9 @@ const App = () => {
   return (
     <div className='Apper'>
       <div className='logo'>
-        <img src={logo} height='200px' alt='logo'></img>
+        <img src={logo} width='100%' alt='logo'></img>
       </div>
-      <div className='testCube'>{/* <Cv /> */}</div>
+      {/* <div className='testCube'><Cv /></div> */}
       <div className='flexContainer'>
         <div className='menu'>
           <Menu />

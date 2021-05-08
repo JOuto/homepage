@@ -12,52 +12,59 @@ const Cv = () => {
       kuvataide Kankaanpää 2006-2010 <br />- University of Ljubljana, Academy of
       Fine Arts 2008 <br />- Oriveden opisto 2004-2005{' '}
       <h5>Yksityisnäyttelyt: </h5>- Aukio/ City Square, Poriginal galleria 2020
-      - Cross-section, Galerie SANAA, Utrecht 2019 - Good is up, WOW Amsterdam
-      2018 - New works,Taidekeskus Mältinranta, Tampere,2017 - Occupied,
-      TM-galleria, Helsinki 2016 - Kluuvin galleria, Helsinki 2013 - Flat
-      things, Atelier am Eck, Dusseldorf 2012 - Maalauksia, Galleria Katariina,
-      Helsinki 2011 - Maalauksia, Kohisevan vintti, Pukkila 2010 - Fantasia,
-      Galleria Rajatila, Tampere 2008 - Maalauksia, Sampolan kirjasto, Tampere
-      2005 <h5>Ryhmänäyttelyt: </h5>- Kuhmalahden kesä, Kuhmalahden taidepappila
-      2019 - Painting a scene, Galleria Saskia, Tampere 2018 - Majestic, galerie
-      SANAA, Utrecht 2017 - Summer@SANAA, Galerie SANAA, Utrecht 2016 - Clear
-      Scenes on Stage, Galerie SANAA, Utrecht 2015 - Rijksakademie OPEN,
-      Amsterdam 2015 - Rijksakademie OPEN, Amsterdam 2014 - New painting from
-      Finland and Sweden, Los Angeles CA, 2014 - Art Nuuttila, Virrat, 2012 -
-      KEHÄ – Uutta maalausta Tampereelta, TR1, Tampere, 2011 - Paremmat
+      <br />- Cross-section, Galerie SANAA, Utrecht 2019 <br />- Good is up, WOW
+      Amsterdam 2018
+      <br /> - New works,Taidekeskus Mältinranta, Tampere,2017 <br />- Occupied,
+      TM-galleria, Helsinki 2016 <br />- Kluuvin galleria, Helsinki 2013 <br />-
+      Flat things, Atelier am Eck, Dusseldorf 2012 <br />- Maalauksia, Galleria
+      Katariina, Helsinki 2011 <br />- Maalauksia, Kohisevan vintti, Pukkila
+      2010 <br />- Fantasia, Galleria Rajatila, Tampere 2008 <br />- Maalauksia,
+      Sampolan kirjasto, Tampere 2005 <h5>Ryhmänäyttelyt: </h5>- Kuhmalahden
+      kesä, Kuhmalahden taidepappila 2019 <br />- Painting a scene, Galleria
+      Saskia, Tampere 2018 <br />- Majestic, galerie SANAA, Utrecht 2017 -
+      Summer@SANAA, Galerie SANAA, Utrecht 2016 <br />- Clear Scenes on Stage,
+      Galerie SANAA, Utrecht 2015 <br />- Rijksakademie OPEN, Amsterdam 2015{' '}
+      <br />- Rijksakademie OPEN, Amsterdam 2014 - New painting from Finland and
+      Sweden, Los Angeles CA, 2014 <br />- Art Nuuttila, Virrat, 2012 <br />-
+      KEHÄ – Uutta maalausta Tampereelta, TR1, Tampere, 2011 <br />- Paremmat
       pidot,SAMK Kuvataide Kankaanpää lopputyönäyttely, Näsilinna, Tampere 2010
-      <h5>Yhteisnäyttelyt: </h5>- Art Fair Suomi, Kaapelitehdas Helsinki, 2019 -
-      KunstRAI, Amsterdam, 2019 - Art the Hague, Haag, 2018 - KunstRAI,
-      Amsterdam, 2018 - BIG Art, Amsterdam, 2017 - Rotterdam Contemporary Art
-      Fair, 2017 - Art the Hague, Haag 2016 - Amsterdam Art Fair, Amsterdam 2016
-      - More Canvas, Galerie Sofie van de Velde, Antwerpen 2016 - Rotterdam
-      Contemporary Art Fair, 2016 - Bekrond, Gallery WTC den Hague, 2016 - Royal
-      Award for Modern Painting, Royal Palace, Amsterdam 2015 - Juuret,
-      Kankaanpään taidekoulu 50-v juhlanäyttely, Kankaanpää 2015 - Boyden 25-v
-      juhlanäyttely, Kaapelitehdas, Helsinki 2013 - Take Away, Galleria
-      Rantakasarmi, Helsinki 2012 - The Art of Basware, Sanomatalo, Helsinki
-      2010, 2011 - Avoin, Portrait ́s galleria, Pori 2009 - The Art of Basware,
-      Sanomatalo, Helsinki 2009 - Joulunäyttely, Kankaanpään taidekoulun
-      galleria 2008 - Raikasta ilmaa, Rauman taidemuseo 2008 - Riita,
-      Työväenmuseo Werstas, Tampere 2008 - The Art of Basware, Sanomatalo,
-      Helsinki 2008 - Avoinna kaikille, Rauman taidemuseo 2007 - Sadonkorjuu,
-      Kankaanpään taidekolun galleria 2007 - The Art of Basware, Sanomatalo,
-      Helsinki 2007 <h5>Teoksia kokoelmissa: </h5>- Rijksakdemie - ING
-      collection - Rabobank - Utrecht University Medical centre - kokoelma De
-      Heus-Zomer - DELA kunstcollectie - Tampereen kaupunki - Suomen
-      Taideyhdistys - Kankaanpään Taideyhdistys - Helsingin taidemuseo - Basware
-      Oy - Gofore Oy - SAMK - Tampereen pysäköintitalo Oy - Yksityiskokoelmat
+      <h5>Yhteisnäyttelyt: </h5>- Art Fair Suomi, Kaapelitehdas Helsinki, 2019{' '}
+      <br />- KunstRAI, Amsterdam, 2019 <br />- Art the Hague, Haag, 2018 <br />
+      - KunstRAI, Amsterdam, 2018 <br />- BIG Art, Amsterdam, 2017 <br />-
+      Rotterdam Contemporary Art Fair, 2017 <br />- Art the Hague, Haag 2016{' '}
+      <br />- Amsterdam Art Fair, Amsterdam 2016
+      <br />- More Canvas, Galerie Sofie van de Velde, Antwerpen 2016 <br />-
+      Rotterdam Contemporary Art Fair, 2016 <br />- Bekrond, Gallery WTC den
+      Hague, 2016 <br />- Royal Award for Modern Painting, Royal Palace,
+      Amsterdam 2015 <br />- Juuret, Kankaanpään taidekoulu 50-v juhlanäyttely,
+      Kankaanpää 2015 <br />- Boyden 25-v juhlanäyttely, Kaapelitehdas, Helsinki
+      2013 <br />- Take Away, Galleria Rantakasarmi, Helsinki 2012 <br />- The Art of
+      Basware, Sanomatalo, Helsinki 2010, 2011 <br />- Avoin, Portrait ́s
+      galleria, Pori 2009 <br />- The Art of Basware, Sanomatalo, Helsinki 2009
+      <br />- Joulunäyttely, Kankaanpään taidekoulun galleria 2008 <br />- Raikasta
+      ilmaa, Rauman taidemuseo 2008 <br />- Riita, Työväenmuseo Werstas, Tampere
+      2008 <br />- The Art of Basware, Sanomatalo, Helsinki 2008 <br />- Avoinna
+      kaikille, Rauman taidemuseo 2007 <br />- Sadonkorjuu, Kankaanpään
+      taidekolun galleria 2007
+      <br />- The Art of Basware, Sanomatalo, Helsinki 2007{' '}
+      <h5>Teoksia kokoelmissa: </h5>- Rijksakdemie - ING collection <br />-
+      Rabobank <br />- Utrecht University Medical centre <br />- kokoelma De
+      Heus-Zomer <br />- DELA kunstcollectie <br />- Tampereen kaupunki <br />-
+      Suomen Taideyhdistys <br />- Kankaanpään Taideyhdistys <br />- Helsingin
+      taidemuseo <br />- Basware Oy <br />- Gofore Oy <br />- SAMK <br />-
+      Tampereen pysäköintitalo Oy <br />- Yksityiskokoelmat
       <h5>Palkinnot: </h5> - Royal Award for Modern Painting, 2015, 1. palkinto
-      - The Art of Basware 2010 , 1. palkinto Apurahat: - Taiteen
-      edistämiskeskus, kohdeapuraha 2020 - Taiteen edistämiskeskus, Pirkanmaan
-      taidetoimikunta 2019 - Taiteen edistämiskeskus, näyttöapuraha 2018 -
-      Suomen kulttuurirahasto, keskusrahasto 1-v työskentelyapuraha 2016 -
-      Koneen säätiö, 1v työskentelyapuraha, 2015 - Koneen säätiö, 1v
-      työskentelyapuraha, 2014 - Paulon säätiö 2014 - Alfred Kordelinin säätiö
-      työskentelyapuraha, 2013 - Taiteen edistämiskeskus näyttöapuraha, 2012 -
-      Suomen taideyhdistys, nuorten taiteilijoiden apuraha 2011 Jäsenyydet: -
-      Taidemaalariliitto kokelasjäsen Residenssit: - WOW Amsterdam 2017-2018 -
-      Dusseldorf 2012 2kk
+      <br />- The Art of Basware 2010 , 1. palkinto <h5>Apurahat:</h5> - Taiteen
+      edistämiskeskus, kohdeapuraha 2020 <br />- Taiteen edistämiskeskus,
+      Pirkanmaan taidetoimikunta 2019 <br />- Taiteen edistämiskeskus,
+      näyttöapuraha 2018 <br />- Suomen kulttuurirahasto, keskusrahasto 1-v
+      työskentelyapuraha 2016 <br />- Koneen säätiö, 1v työskentelyapuraha, 2015{' '}
+      <br />- Koneen säätiö, 1v työskentelyapuraha, 2014 <br />- Paulon säätiö
+      2014 <br />- Alfred Kordelinin säätiö työskentelyapuraha, 2013 <br />-
+      Taiteen edistämiskeskus näyttöapuraha, 2012 <br />- Suomen taideyhdistys,
+      nuorten taiteilijoiden apuraha 2011 <h5>Jäsenyydet:</h5> -
+      Taidemaalariliitto kokelasjäsen <br /> - Tampereen taiteilijaseura{' '}
+      <h5>Residenssit:</h5> - WOW Amsterdam 2017-2018 - Dusseldorf 2012 2kk
     </div>
   );
 };

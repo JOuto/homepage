@@ -16,7 +16,7 @@ const ImageCollection = () => {
           setImage(image);
         }}
         src={image}
-        width='300px'
+        width='100%'
         alt='imageItem'
       ></img>
     );

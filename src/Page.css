@@ -63,8 +63,8 @@
   margin: 20px;
   /* border: solid 1px black; */
   flex-wrap: wrap;
-  height: 200px;
-  width: 200px;
+
+  width: 100%;
   overflow: hidden;
 
   background-color: white;
@@ -72,6 +72,7 @@
 
 /*CONTENT */
 .content {
+  width: 70%;
 }
 .contentWrapper {
   background-color: white;
@@ -93,6 +94,7 @@
 .galleryWrapper {
   text-align: center;
   background-color: white;
+  width: 70%;
 }
 .fullScreenDimmer {
   /* display: none; */
@@ -152,8 +154,11 @@ ul.nav {
   padding-left: 0;
   margin-left: 0;
 }
+
 ul.nav a {
   z-index: 4;
+
+  width: 100%;
 
   text-decoration: none;
   font-weight: 600;
@@ -204,7 +209,7 @@ ul.nav li {
 }
 .dropdown-btn {
   padding: 0px;
-
+  width: 80%;
   display: block;
   background: none;
   border: none;
@@ -243,6 +248,7 @@ ul.nav li {
 .cvWrapper {
   /* margin-right: 110px; */
   text-align: left;
+  width: 70%;
 }
 /* .cvWrapper span {
   

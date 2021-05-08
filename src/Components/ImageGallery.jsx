@@ -33,7 +33,7 @@ const ImageGallery = () => {
   const onMouseLeave = () => {
     setShowImgDetails(false);
   };
-  
+
   return (
     <div className='galleryWrapper'>
       <FullscreenView
@@ -60,7 +60,7 @@ const ImageGallery = () => {
         }}
         src={images[imgIndex].imgUrl}
         alt='img'
-        width='500px'
+        width='100%'
       />
       <button className='galleryButton' onClick={next}>
         next

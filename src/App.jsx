@@ -41,11 +41,14 @@ const App = () => {
 
   /* const logoDisplay = showLogo ? '1' : '0'; */
   return (
-    <div className='Apper'>
+   
+   
+   <div className='Apper'>
+    
       <div className='logo'>
         <img src={logo} height='200px' alt='logo'></img>
       </div>
-      <div className='testCube'>{/* <Cv /> */}</div>
+      {/* <div className='testCube'><Cv /></div> */}
       <div className='flexContainer'>
         <div className='menu'>
           <Menu />
@@ -57,6 +60,9 @@ const App = () => {
           </div>
         </div>
         {/* <div className='testCube2'></div> */}
+        
+        
+        
         <div className='contentWrapper'>
           <div className='content'>
             <Switch>

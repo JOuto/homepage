@@ -161,6 +161,9 @@ ul.nav {
   padding-left: 0;
   margin-left: 0;
 }
+ul.nav li {
+  line-height: 1.6em;
+}
 ul.nav a {
   z-index: 4;
 
@@ -169,7 +172,7 @@ ul.nav a {
   font-style: normal;
   text-transform: none;
   letter-spacing: 0px;
-  line-height: 2.3vh;
+  line-height: 1.6em;
   /* font-size: 16px; */
   color: black;
 

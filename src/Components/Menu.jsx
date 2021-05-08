@@ -22,7 +22,7 @@ const Menu = () => {
           //onClick={() => setShow(!show)}
           className='dropdown-btn'
         >
-          Works
+          <span>Works</span>
           <Icon style={{ paddingLeft: '5px' }} name='caret down' size='small' />
         </button>
         <div className='dropdown-container'>
@@ -60,6 +60,7 @@ const Menu = () => {
           //onClick={() => setShow(!show)}
           className='dropdown-btn'
         >
+          
           Biography
           <Icon style={{ paddingLeft: '5px' }} name='caret down' size='small' />
         </button>

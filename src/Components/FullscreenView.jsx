@@ -22,7 +22,7 @@ const FullscreenView = ({ image, setFullScreenView, fullScreenView }) => {
           style={{ paddingTop: '100px' }}
           src={image}
           alt='img'
-          width='850px'
+          width='70%'
           onClick={() => setFullScreenView(false)}
         />
       </div>

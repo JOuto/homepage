@@ -41,32 +41,33 @@ const ImageGallery = () => {
         fullScreenView={fullScreenView}
         setFullScreenView={setFullScreenView}
       />
-
-      <span style={{ position: 'absolute', float: 'up' }}>
-        {imgIndex + 1 + '/' + images.length}
-      </span>
-      <br />
-      <button className='galleryButton' onClick={prev}>
-        <Icon name='chevron left' />
-        prev
-      </button>
-      <img
-        style={{ paddingLeft: '20px', paddingTop: '20px' }}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-        onClick={() => {
-          setFullScreenView(true);
-          setImage(images[imgIndex].imgUrl);
-        }}
-        src={images[imgIndex].imgUrl}
-        alt='img'
-        width='100%'
-      />
-      <button className='galleryButton' onClick={next}>
-        next
-        <Icon name='chevron right' />
-      </button>
-      {showImgDetails && <p>{images[imgIndex].title}</p>}
+      <div style={{ width: '100%' }}>
+        <span style={{ position: 'absolute', float: 'up' }}>
+          {imgIndex + 1 + '/' + images.length}
+        </span>
+        <br />
+        <button className='galleryButton' onClick={prev}>
+          <Icon name='chevron left' />
+          prev
+        </button>
+        <img
+          style={{ paddingLeft: '20px', paddingTop: '20px' }}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+          onClick={() => {
+            setFullScreenView(true);
+            setImage(images[imgIndex].imgUrl);
+          }}
+          src={images[imgIndex].imgUrl}
+          alt='img'
+          width='60%'
+        />
+        <button className='galleryButton' onClick={next}>
+          next
+          <Icon name='chevron right' />
+        </button>
+        {showImgDetails && <p>{images[imgIndex].title}</p>}
+      </div>
     </div>
   );
 };

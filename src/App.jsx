@@ -31,7 +31,7 @@ const App = () => {
           dropdownContent.style.height === '0px' ||
           !dropdownContent.style.height
         ) {
-          dropdownContent.style.height = x * 22.222 + 'px';
+          dropdownContent.style.height = x * 2.3 + 'vh';
         } else {
           dropdownContent.style.height = '0px';
         }

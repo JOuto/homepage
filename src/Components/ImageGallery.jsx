@@ -1,11 +1,11 @@
-import images from '../Data/images';
+
 import React from 'react';
 import { Icon } from 'semantic-ui-react';
 import '../Page.css';
 import fullScreenView from './FullscreenView';
 import FullscreenView from './FullscreenView';
 
-const ImageGallery = () => {
+const ImageGallery = ({ images }) => {
   const [imgIndex, setImgIndex] = React.useState(0);
   const [showImgDetails, setShowImgDetails] = React.useState(false);
   const [fullScreenView, setFullScreenView] = React.useState(false);

@@ -11,6 +11,8 @@ import blueSpot from './Img/blueSpot.png';
 import ImageCollection from './Components/ImageCollection';
 import Testi from './Components/Testi';
 import ContactPage from './Components/Contact';
+import images from './Data/images';
+import katariina from './Data/katariina';
 
 const App = () => {
   const [showLogo, setShowLogo] = useState(false);
@@ -42,13 +44,14 @@ const App = () => {
   /* const logoDisplay = showLogo ? '1' : '0'; */
   return (
     <div className='Apper'>
-      <div className='logo'>
-        <img src={logo} width='80%' alt='logo'></img>
-      </div>
       {/* <div className='testCube'><Cv /></div> */}
       <div className='flexContainer'>
         <div className='menu'>
+          <div className='logo'>
+            <img src={logo} width='80%' alt='logo'></img>
+          </div>
           <Menu />
+
           <div className='puddle'>
             <img src={puddle} alt='puddle' height='150px'></img>
           </div>
@@ -71,7 +74,7 @@ const App = () => {
                 </div>
               </Route>
               <Route path='/works/2018'>
-                <ImageGallery />
+                <ImageGallery images={katariina} />
               </Route>
               <Route path='/cv'>
                 <Cv />
@@ -81,6 +84,9 @@ const App = () => {
               </Route>
               <Route path='/testi'>
                 <Testi />
+              </Route>
+              <Route path='/'>
+                <News />
               </Route>
             </Switch>
           </div>

@@ -4,15 +4,20 @@ import { Switch, Route } from 'react-router-dom';
 import News from './Components/News';
 import './Page.css';
 import logo from './Img/logo.png';
-import ImageGallery from './Components/ImageGallery';
+import logo2 from './Img/logo2.png';
+import jtLogo from './Img/JTlogo.png';
+import ImageGallery from './Components/Gallery/ImageGallery';
 import Cv from './Components/CvPage';
 import puddle from './Img/puddle.png';
 import blueSpot from './Img/blueSpot.png';
-import ImageCollection from './Components/ImageCollection';
+import ImageCollection from './Components/Gallery/ImageCollection';
 import Testi from './Components/Testi';
 import ContactPage from './Components/Contact';
 import images from './Data/images';
-import katariina from './Data/katariina';
+import katariina from './imageCollections/2011';
+import images18_19 from './imageCollections/2018-19';
+import imagesKluuvi from './imageCollections/2013kluuvi';
+import images2017 from './imageCollections/2017';
 
 const App = () => {
   const [showLogo, setShowLogo] = useState(false);
@@ -48,16 +53,16 @@ const App = () => {
       <div className='flexContainer'>
         <div className='menu'>
           <div className='logo'>
-            <img src={logo} width='80%' alt='logo'></img>
+            <img src={logo2} width='80%' alt='logo'></img>
           </div>
           <Menu />
 
-          <div className='puddle'>
+          {/*  <div className='puddle'>
             <img src={puddle} alt='puddle' height='150px'></img>
-          </div>
-          <div className='spot'>
+          </div> */}
+          {/*  <div className='spot'>
             <img src={blueSpot} alt='puddle' height='100px'></img>
-          </div>
+          </div> */}
         </div>
         {/* <div className='testCube2'></div> */}
         <div className='contentWrapper'>
@@ -74,13 +79,19 @@ const App = () => {
                 </div>
               </Route>
               <Route path='/works/2018'>
+                <ImageGallery images={images18_19} />
+              </Route>
+              <Route path='/works/2013'>
+                <ImageGallery images={imagesKluuvi} />
+              </Route>
+              <Route path='/works/2011'>
                 <ImageGallery images={katariina} />
               </Route>
               <Route path='/cv'>
                 <Cv />
               </Route>
               <Route path='/works/2017'>
-                <ImageCollection />
+                <ImageCollection images={images2017} />
               </Route>
               <Route path='/testi'>
                 <Testi />
@@ -93,7 +104,7 @@ const App = () => {
         </div>
       </div>
       <div className='footerWrapper'>
-        <footer className='footer'>Jouni Toni 2021</footer>
+        <footer className='footer'></footer>
       </div>
     </div>
   );

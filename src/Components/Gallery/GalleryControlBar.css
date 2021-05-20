@@ -1,0 +1,21 @@
+.ControlBarWrapper {
+  font-size: 12px;
+  font-weight: bold;
+  position: fixed;
+  background-color: white;
+  bottom: 0;
+  right: 0;
+  z-index: 9997;
+  width: 250px;
+  height: 150px;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  padding: 25px;
+}
+
+.buttonWrapper {
+  cursor: pointer;
+  font-weight: 50;
+  font-size: 10px;
+}

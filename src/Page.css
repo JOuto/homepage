@@ -3,7 +3,7 @@
 .Apper {
   overflow: hidden;
 
-  min-height: 100vh;
+  min-height: 80vh;
   padding-bottom: 100px;
   position: relative;
   display: block;
@@ -22,7 +22,7 @@
   transition-property: all;
   transition-duration: 0.5s;
   margin-bottom: 10px;
-  width: 50%;
+  width: 75%;
 }
 .logo:hover {
   /* opacity: 0; */
@@ -58,14 +58,13 @@
   flex-wrap: wrap;
   background-color: white;
   align-content: flex-start;
-  overflow-x: scroll;
 }
 .flexItem {
   margin: 20px;
   /* border: solid 1px black; */
   flex-wrap: wrap;
   height: 200px;
-  width: 200px;
+  width: 250px;
   overflow: hidden;
 
   background-color: white;
@@ -77,13 +76,13 @@
 .contentWrapper {
   background-color: white;
   padding-left: 30px;
-  padding-top: 70px;
+  padding-top: 60px;
   text-align: center;
   float: right;
   height: 100%;
 
   text-align: center;
-  width: 70%;
+  width: 78%;
 }
 .subscribe-btn {
   border-radius: 0;
@@ -114,20 +113,19 @@
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 5;
+  z-index: 9998;
   padding: 50px;
 }
 .fullScreenContent {
-  overflow: scroll;
   position: fixed;
-  top: 10%;
+  top: 0%;
   left: 10%;
   height: 80%;
-  width: 80%;
+  width: 100%;
   /* background-color: white; */
   padding: 20px;
 
-  z-index: 10;
+  z-index: 9999;
 }
 .galleryButton {
   border: none;
@@ -155,7 +153,7 @@
   font-family: Arial, Helvetica, sans-serif;
   float: left;
   padding-left: 25px;
-  width: 29%;
+  width: 22%;
   font-size: 1.2vw;
 }
 @media screen and (max-width: 800px) {
@@ -268,12 +266,11 @@ ul.nav li {
   
 } */
 .footerWrapper {
-  background-color: white;
   position: absolute;
   width: 100%;
   height: 100px;
   bottom: 0;
-  border-top: solid black 1px;
+
   clear: both;
 }
 .footer {

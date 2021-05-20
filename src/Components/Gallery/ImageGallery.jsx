@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { Icon } from 'semantic-ui-react';
-import '../Page.css';
-import fullScreenView from './FullscreenView';
-import FullscreenView from './FullscreenView';
+import '../../Page.css';
+import GalleryControlBar from './GalleryControlBar';
+
+import FullscreenView from '../FullscreenView';
 
 const ImageGallery = ({ images }) => {
   const [imgIndex, setImgIndex] = React.useState(0);
@@ -41,15 +41,14 @@ const ImageGallery = ({ images }) => {
         fullScreenView={fullScreenView}
         setFullScreenView={setFullScreenView}
       />
+      <GalleryControlBar
+        setImgIndex={setImgIndex}
+        imgIndex={imgIndex}
+        images={images}
+      />
+
       <div style={{ width: '100%' }}>
-        <span style={{ position: 'absolute', float: 'up' }}>
-          {imgIndex + 1 + '/' + images.length}
-        </span>
         <br />
-        <button className='galleryButton' onClick={prev}>
-          <Icon name='chevron left' />
-          prev
-        </button>
         <img
           style={{ paddingLeft: '20px', paddingTop: '20px' }}
           onMouseEnter={onMouseEnter}
@@ -60,13 +59,10 @@ const ImageGallery = ({ images }) => {
           }}
           src={images[imgIndex].imgUrl}
           alt='img'
-          width='60%'
+          width='85%'
         />
-        <button className='galleryButton' onClick={next}>
-          next
-          <Icon name='chevron right' />
-        </button>
-        {showImgDetails && <p>{images[imgIndex].title}</p>}
+        {/* 
+        {showImgDetails && <p>{images[imgIndex].title}</p> */}}
       </div>
     </div>
   );

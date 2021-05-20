@@ -1,11 +1,10 @@
-import images from '../Data/images.js';
-import katariina from '../Data/katariina.js';
-import FullscreenView from './FullscreenView';
+import images from '../../Data/images.js';
+import katariina from '../../imageCollections/2011.js';
+import FullscreenView from '../FullscreenView';
 import React from 'react';
-import '../Page.css';
-import maali from '../Img/11/maaliverkko.jpeg';
+import '../../Page.css';
 
-const ImageCollection = () => {
+const ImageCollection = ({ images }) => {
   const [fullScreenView, setFullScreenView] = React.useState(false);
   const [image, setImage] = React.useState('');
   //const imageHeight = { height: '200px' };
@@ -20,7 +19,6 @@ const ImageCollection = () => {
         }}
         src={image}
         height='100%'
-        /* style={{ minWidth: '50px' }} */
         alt='imageItem'
       ></img>
     );
@@ -35,7 +33,7 @@ const ImageCollection = () => {
           fullScreenView={fullScreenView}
         />
         {images &&
-          katariina.map((image, i) => (
+          images.map((image, i) => (
             <div className='flexItem' key={i}>
               {imageListItem(image.imgUrl)}
             </div>

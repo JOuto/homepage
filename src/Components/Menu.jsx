@@ -34,18 +34,22 @@ const Menu = () => {
               <Link to='/works/2017'>2017</Link>
             </li>
             <li>
-              <Link to='/testi'>2016</Link>
+              <Link to='/works/TMgalleria'>2016</Link>
             </li>
             <li>
-              <a href='#'>2015</a>
+              <Link to='works/2015'>2015</Link>
             </li>
             <li>
-              <a href='#'>2014</a>
+              <Link to='/works/2014'>2014</Link>
             </li>
             <li>
-              <a href='#'>2013</a>
+              <Link to='/works/2013'>2013</Link>
             </li>
             <li>
+              <li>
+                <Link to='/works/2011'>2011</Link>
+              </li>
+
               <a href='#'>Animations</a>
             </li>
           </ul>

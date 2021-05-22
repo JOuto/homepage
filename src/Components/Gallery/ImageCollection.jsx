@@ -1,58 +1,53 @@
-import images from '../../Data/images.js';
-import katariina from '../../imageCollections/2011.js';
-import FullscreenView from '../FullscreenView';
-import React from 'react';
+import FullscreenView from './FullscreenView';
+import React, { useState } from 'react';
 import '../../Page.css';
+import './GalleryControlBar.css';
 
 const ImageCollection = ({ images }) => {
   const [fullScreenView, setFullScreenView] = React.useState(false);
-  const [image, setImage] = React.useState('');
-  //const imageHeight = { height: '200px' };
+  const [imageIndex, setImageIndex] = React.useState(0);
 
   const imageListItem = (image) => {
-    console.log(image, fullScreenView);
     return (
       <img
         onClick={() => {
+          const i = images.indexOf(image);
+          console.log(i);
+          console.log(images.indexOf(image));
+          console.log(imageIndex);
+          setImageIndex(i);
+          console.log(imageIndex);
           setFullScreenView(true);
-          setImage(image);
         }}
-        src={image}
+        src={image.imgUrl}
         height='100%'
         alt='imageItem'
       ></img>
     );
   };
 
-  return (
-    <div className='imageCollectionWrapper'>
-      <div className='flexContainer'>
+  if (images) {
+    return (
+      <div className='imageCollectionWrapper'>
         <FullscreenView
-          image={image}
           setFullScreenView={setFullScreenView}
           fullScreenView={fullScreenView}
+          images={images}
+          imageIndex={imageIndex}
+          setImageIndex={setImageIndex}
         />
-        {images &&
-          images.map((image, i) => (
-            <div className='flexItem' key={i}>
-              {imageListItem(image.imgUrl)}
-            </div>
-          ))}
-        {/*    <div className='flexItem'>{imageListItem(images[0].imgUrl)}</div>
-        <div className='flexItem'>{imageListItem(images[1].imgUrl)}</div>
-        <div className='flexItem'>{imageListItem(images[2].imgUrl)}</div> */}
-
-        <div className='flexItem'></div>
-        <div className='flexItem'></div>
-        <div className='flexItem'></div>
-        <div className='flexItem'></div>
-        <div className='flexItem'></div>
-        <div className='flexItem'></div>
-        <div className='flexItem'></div>
-        <div className='flexItem'></div>
+        <div className='flexContainer'>
+          {images &&
+            images.map((img, i) => (
+              <div className='flexItem' key={i}>
+                {imageListItem(img)}
+              </div>
+            ))}
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
+  return null;
 };
 
 export default ImageCollection;

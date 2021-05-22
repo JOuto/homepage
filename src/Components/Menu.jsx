@@ -34,10 +34,13 @@ const Menu = () => {
               <Link to='/works/2017'>2017</Link>
             </li>
             <li>
-              <Link to='/works/TMgalleria'>2016</Link>
+              <Link to='/works/2016tm'>2016 Tm-Gallery</Link>
             </li>
             <li>
-              <Link to='works/2015'>2015</Link>
+              <Link to='/works/2016'>2016</Link>
+            </li>
+            <li>
+              <Link to='/works/2015'>2015</Link>
             </li>
             <li>
               <Link to='/works/2014'>2014</Link>
@@ -47,7 +50,7 @@ const Menu = () => {
             </li>
             <li>
               <li>
-                <Link to='/works/2011'>2011</Link>
+                <Link to='/works/2011'>2011 Gallery Katariina</Link>
               </li>
 
               <a href='#'>Animations</a>

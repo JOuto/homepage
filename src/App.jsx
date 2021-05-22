@@ -4,29 +4,30 @@ import { Switch, Route } from 'react-router-dom';
 import News from './Components/News';
 import './Page.css';
 import logo from './Img/logo.png';
-import logo2 from './Img/logo2.png';
+import logo3 from './Img/logo3.png';
 import jtLogo from './Img/JTlogo.png';
-import ImageGallery from './Components/Gallery/ImageGallery';
+import ImageCarousel from './Components/Gallery/ImageCarousel';
 import Cv from './Components/CvPage';
-import puddle from './Img/puddle.png';
-import blueSpot from './Img/blueSpot.png';
+
 import ImageCollection from './Components/Gallery/ImageCollection';
-import Testi from './Components/Testi';
 import ContactPage from './Components/Contact';
-import images from './Data/images';
 import katariina from './imageCollections/2011';
 import images18_19 from './imageCollections/2018-19';
 import imagesKluuvi from './imageCollections/2013kluuvi';
 import images2017 from './imageCollections/2017';
+import images2015 from './imageCollections/2015';
+import images2016tm from './imageCollections/2016tm';
+import images2014 from './imageCollections/2014';
+import images2016 from './imageCollections/2016';
+import images17_18 from './imageCollections/2017-18';
 
 const App = () => {
-  const [showLogo, setShowLogo] = useState(false);
+  
   var dropdown = document.getElementsByClassName('dropdown-btn');
   useEffect(() => {
     var i;
     for (i = 0; i < dropdown.length; i++) {
       dropdown[i].addEventListener('click', function () {
-        //this.classList.toggle('active');
         console.log('click');
         var dropdownContent = this.nextElementSibling;
         const x = dropdownContent.firstChild.childElementCount;
@@ -46,25 +47,22 @@ const App = () => {
     }
   }, [dropdown]);
 
-  /* const logoDisplay = showLogo ? '1' : '0'; */
+
+
+
+
+
+
   return (
     <div className='Apper'>
-      {/* <div className='testCube'><Cv /></div> */}
       <div className='flexContainer'>
         <div className='menu'>
           <div className='logo'>
-            <img src={logo2} width='80%' alt='logo'></img>
+            <img src={logo3} width='80%' alt='logo'></img>
           </div>
           <Menu />
-
-          {/*  <div className='puddle'>
-            <img src={puddle} alt='puddle' height='150px'></img>
-          </div> */}
-          {/*  <div className='spot'>
-            <img src={blueSpot} alt='puddle' height='100px'></img>
-          </div> */}
         </div>
-        {/* <div className='testCube2'></div> */}
+
         <div className='contentWrapper'>
           <div className='content'>
             <Switch>
@@ -79,23 +77,38 @@ const App = () => {
                 </div>
               </Route>
               <Route path='/works/2018'>
-                <ImageGallery images={images18_19} />
+                <ImageCollection images={images18_19} />
               </Route>
               <Route path='/works/2013'>
-                <ImageGallery images={imagesKluuvi} />
+                <ImageCarousel images={imagesKluuvi} />
               </Route>
               <Route path='/works/2011'>
-                <ImageGallery images={katariina} />
+                <ImageCarousel images={katariina} />
               </Route>
               <Route path='/cv'>
                 <Cv />
               </Route>
+
+              <Route path='/works/2015'>
+                <ImageCollection images={images2015} />
+              </Route>
+              <Route path='/works/2016'>
+                <ImageCollection images={images2016} />
+              </Route>
+              <Route path='/works/2016tm'>
+                <ImageCollection images={images2016tm} />
+              </Route>
+              <Route path='/works/2014'>
+                <ImageCollection images={images2014} />
+              </Route>
               <Route path='/works/2017'>
                 <ImageCollection images={images2017} />
               </Route>
-              <Route path='/testi'>
-                <Testi />
+
+              <Route path='/works/20118'>
+                <ImageCollection images={images17_18} />
               </Route>
+
               <Route path='/'>
                 <News />
               </Route>
@@ -103,9 +116,9 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className='footerWrapper'>
+      {/*  <div className='footerWrapper'>
         <footer className='footer'></footer>
-      </div>
+      </div> */}
     </div>
   );
 };

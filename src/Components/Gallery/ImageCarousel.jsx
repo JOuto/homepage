@@ -1,45 +1,27 @@
 import React from 'react';
-import { Icon } from 'semantic-ui-react';
+
 import '../../Page.css';
 import GalleryControlBar from './GalleryControlBar';
 
-import FullscreenView from '../FullscreenView';
+import FullscreenView from './FullscreenView';
 
 const ImageGallery = ({ images }) => {
   const [imgIndex, setImgIndex] = React.useState(0);
   const [showImgDetails, setShowImgDetails] = React.useState(false);
   const [fullScreenView, setFullScreenView] = React.useState(false);
-  const [image, setImage] = React.useState('');
-  console.log(images);
-  console.log(images[2].imgUrl);
-  console.log(imgIndex);
+  const [image, setImage] = React.useState();
 
-  const next = () => {
-    if (imgIndex === images.length - 1) {
-      return setImgIndex(0);
-    }
-    setImgIndex(imgIndex + 1);
-  };
-  const prev = () => {
-    if (imgIndex === 0) {
-      return setImgIndex(images.length - 1);
-    }
-    setImgIndex(imgIndex - 1);
-  };
-
-  const onMouseEnter = () => {
-    setShowImgDetails(true);
-  };
-  const onMouseLeave = () => {
-    setShowImgDetails(false);
-  };
+  console.log(image);
 
   return (
     <div className='galleryWrapper'>
       <FullscreenView
         image={image}
+        images={images}
         fullScreenView={fullScreenView}
         setFullScreenView={setFullScreenView}
+        imageIndex={imgIndex}
+        setImageIndex={setImgIndex}
       />
       <GalleryControlBar
         setImgIndex={setImgIndex}
@@ -51,18 +33,21 @@ const ImageGallery = ({ images }) => {
         <br />
         <img
           style={{ paddingLeft: '20px', paddingTop: '20px' }}
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
           onClick={() => {
+            console.log(images);
+            console.log(imgIndex);
+            console.log(images[imgIndex]);
+            setImage(images[imgIndex]);
+            console.log(image);
+
             setFullScreenView(true);
-            setImage(images[imgIndex].imgUrl);
           }}
           src={images[imgIndex].imgUrl}
           alt='img'
           width='85%'
         />
         {/* 
-        {showImgDetails && <p>{images[imgIndex].title}</p> */}}
+        {showImgDetails && <p>{images[imgIndex].title}</p> */}
       </div>
     </div>
   );

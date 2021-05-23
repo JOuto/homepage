@@ -1,6 +1,7 @@
+import React from 'react';
 import Menu from './Components/Menu';
 import { useEffect, useState } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Link } from 'react-router-dom';
 import News from './Components/News';
 import './Page.css';
 import logo from './Img/logo.png';
@@ -8,6 +9,8 @@ import logo3 from './Img/logo3.png';
 import jtLogo from './Img/JTlogo.png';
 import ImageCarousel from './Components/Gallery/ImageCarousel';
 import Cv from './Components/CvPage';
+import NewsletterSubscribe from './Components/NewsletterSubs';
+import Index from './Components/Index';
 
 import ImageCollection from './Components/Gallery/ImageCollection';
 import ContactPage from './Components/Contact';
@@ -20,8 +23,12 @@ import images2016tm from './imageCollections/2016tm';
 import images2014 from './imageCollections/2014';
 import images2016 from './imageCollections/2016';
 import images17_18 from './imageCollections/2017-18';
+import newsLogo from './Img/news.png';
+import instaLogo from './Img/insta.png';
 
 const App = () => {
+  const [showNewsletterSubs, setShowNewletterSubs] = React.useState(false);
+  const [fullScreenView, setFullScreenView] = React.useState(false);
   var dropdown = document.getElementsByClassName('dropdown-btn');
   useEffect(() => {
     var i;
@@ -48,11 +55,32 @@ const App = () => {
 
   return (
     <div className='Apper'>
+      {!fullScreenView && (
+        <div>
+          <div className='instaLink'>
+            <a href='http://instagram.com/jouni_toni'>
+              <img src={instaLogo} height='30em' alt='insta'></img>
+            </a>
+          </div>
+          <div
+            className='newsLetterButton'
+            onClick={() => setShowNewletterSubs(true)}
+          >
+            <img src={newsLogo} alt='newsLogo' height='150em'></img>
+          </div>
+        </div>
+      )}
+      {showNewsletterSubs && (
+        <NewsletterSubscribe setShowNewletterSubs={setShowNewletterSubs} />
+      )}
       <div className='flexContainer'>
         <div className='menu'>
-          <div className='logo'>
-            <img src={logo3} width='80%' alt='logo'></img>
-          </div>
+          <Link to='/' className='indexLink'>
+            <div className='logo'>
+              <p>JOUNI</p>TONI
+              {/* <img src={logo3} width='80%' alt='logo'></img> */}
+            </div>
+          </Link>
           <Menu />
         </div>
 
@@ -70,40 +98,76 @@ const App = () => {
                 </div>
               </Route>
               <Route path='/works/2018'>
-                <ImageCollection images={images18_19} />
+                <ImageCollection
+                  images={images18_19}
+                  fullScreenView={fullScreenView}
+                  setFullScreenView={setFullScreenView}
+                />
               </Route>
               <Route path='/works/2013'>
-                <ImageCollection images={imagesKluuvi} />
+                <ImageCollection
+                  images={imagesKluuvi}
+                  fullScreenView={fullScreenView}
+                  setFullScreenView={setFullScreenView}
+                />
               </Route>
               <Route path='/works/2011'>
-                <ImageCollection images={katariina} />
+                <ImageCollection
+                  images={katariina}
+                  fullScreenView={fullScreenView}
+                  setFullScreenView={setFullScreenView}
+                />
               </Route>
               <Route path='/cv'>
                 <Cv />
               </Route>
 
               <Route path='/works/2015'>
-                <ImageCollection images={images2015} />
+                <ImageCollection
+                  images={images2015}
+                  fullScreenView={fullScreenView}
+                  setFullScreenView={setFullScreenView}
+                />
               </Route>
               <Route path='/works/2016'>
-                <ImageCollection images={images2016} />
+                <ImageCollection
+                  images={images2016}
+                  fullScreenView={fullScreenView}
+                  setFullScreenView={setFullScreenView}
+                />
               </Route>
               <Route path='/works/2016tm'>
-                <ImageCollection images={images2016tm} />
+                <ImageCollection
+                  images={images2016tm}
+                  fullScreenView={fullScreenView}
+                  setFullScreenView={setFullScreenView}
+                />
               </Route>
               <Route path='/works/2014'>
-                <ImageCollection images={images2014} />
+                <ImageCollection
+                  images={images2014}
+                  fullScreenView={fullScreenView}
+                  setFullScreenView={setFullScreenView}
+                />
               </Route>
               <Route path='/works/2017'>
-                <ImageCollection images={images2017} />
+                <ImageCollection
+                  images={images2017}
+                  fullScreenView={fullScreenView}
+                  setFullScreenView={setFullScreenView}
+                />
               </Route>
 
               <Route path='/works/20118'>
-                <ImageCollection images={images17_18} />
+                <ImageCollection
+                  images={images17_18}
+                  fullScreenView={fullScreenView}
+                  setFullScreenView={setFullScreenView}
+                />
               </Route>
 
               <Route path='/'>
-                <News />
+                <Index />
               </Route>
             </Switch>
           </div>

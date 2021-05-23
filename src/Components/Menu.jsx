@@ -28,7 +28,7 @@ const Menu = () => {
         <div className='dropdown-container'>
           <ul className='nav' id='worksDropdown'>
             <li>
-              <Link to='/works/2018'>2018</Link>
+              <Link to='/works/2018'>2018-19</Link>
             </li>
             <li>
               <Link to='/works/2017'>2017</Link>
@@ -50,9 +50,10 @@ const Menu = () => {
             </li>
             <li>
               <li>
-                <Link to='/works/2011'>2011 Gallery Katariina</Link>
+                <Link to='/works/2011'>2011</Link>
               </li>
-
+            </li>
+            <li>
               <a href='#'>Animations</a>
             </li>
           </ul>
@@ -76,7 +77,7 @@ const Menu = () => {
               <Link to='/cv'>CV</Link>
             </li>
             <li>
-              <Link to='/me'>About me</Link>
+              <Link to='/cv'>About me</Link>
             </li>
           </ul>
         </div>

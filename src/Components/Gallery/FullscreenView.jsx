@@ -27,7 +27,7 @@ const FullscreenView = ({
     return images.length - 1;
   };
 
-  if (images && imageIndex) {
+  if (images && imageIndex !== undefined) {
     return (
       <div>
         <div

@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import '../../Page.css';
 import './GalleryControlBar.css';
 
-const ImageCollection = ({ images }) => {
-  const [fullScreenView, setFullScreenView] = React.useState(false);
+const ImageCollection = ({ images, fullScreenView, setFullScreenView }) => {
+  //const [fullScreenView, setFullScreenView] = React.useState(false);
   const [imageIndex, setImageIndex] = React.useState(0);
 
   const imageListItem = (image) => {
@@ -21,6 +21,7 @@ const ImageCollection = ({ images }) => {
           setFullScreenView(true);
         }}
         src={image.imgUrl}
+        width='100%'
         alt='imageItem'
       ></img>
     );

@@ -56,19 +56,20 @@ const FullscreenView = ({
               onClick={() => setImageIndex(indexOfNextImg())}
             />
           </div>
-          <div></div>
+
           <ImageInfoBar image={images[imageIndex]} />
 
           <img
-            style={{ paddingTop: '100px' }}
+            className='imageCollectionImg'
+            style={{ paddingTop: '80px' }}
             src={images[imageIndex].imgUrl}
             alt='img'
-            width='70%'
+            /* height='90%' */
+
             onClick={() => setFullScreenView(false)}
           />
         </div>
-        </div>
-      
+      </div>
     );
   }
   return null;

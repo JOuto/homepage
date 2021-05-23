@@ -19,7 +19,7 @@ const News = () => {
   };
 
   return (
-    <div>
+    <div className="newsWrapper">
       Subscribe for newsletter
       <div type='submit' onSubmit={subscribe}>
         <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />

@@ -14,14 +14,15 @@
   padding: 25px;
 }
 .InfoBarWrapper {
-  font-size: 0.9vw;
+  font-size: 0.8vw;
   font-weight: bold;
   position: absolute;
+  top: 0;
   background-color: white;
   border: solid black 1px;
   z-index: 9999;
-  width: 20em;
-  height: 10em;
+  width: 24em;
+  height: 14em;
   text-align: left;
   margin-bottom: 30px;
   margin-right: 50px;
@@ -32,8 +33,6 @@
 }
 @media screen and (max-width: 800px) {
   .InfoBarWrapper {
-    width: 100px;
-    height: 100px;
     font-size: 8px;
   }
   .title {

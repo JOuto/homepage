@@ -10,6 +10,7 @@ const ImageCollection = ({ images }) => {
   const imageListItem = (image) => {
     return (
       <img
+        className='imageCollectionThumb'
         onClick={() => {
           const i = images.indexOf(image);
           console.log(i);
@@ -20,7 +21,6 @@ const ImageCollection = ({ images }) => {
           setFullScreenView(true);
         }}
         src={image.imgUrl}
-        height='100%'
         alt='imageItem'
       ></img>
     );

@@ -38,7 +38,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   background-color: white;
-  align-content: flex-start;
+  align-content: center;
 }
 .flexItem {
   margin: 20px;
@@ -62,7 +62,7 @@
   right: 0;
   height: 100%;
   position: fixed;
-  text-align: center;
+
   width: 78%;
 }
 .subscribe-btn {
@@ -205,7 +205,7 @@
 
 @media screen and (max-width: 800px) {
   .menu {
-    font-size: 5px;
+    font-size: 7px;
   }
   .cvWrapper {
     margin-left: 0px;
@@ -332,7 +332,7 @@ ul.nav li {
   }
 }
 .newsLetterButton {
-  padding-left: 20px;
+  padding-left: 10px;
   cursor: pointer;
   position: fixed;
   bottom: 50px;
@@ -359,7 +359,7 @@ ul.nav li {
 }
 
 .instaLink {
-  padding-left: 20px;
+  padding-left: 10px;
   cursor: pointer;
   position: fixed;
   bottom: 100px;

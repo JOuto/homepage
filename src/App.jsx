@@ -22,7 +22,6 @@ import images2016 from './imageCollections/2016';
 import images17_18 from './imageCollections/2017-18';
 
 const App = () => {
-  
   var dropdown = document.getElementsByClassName('dropdown-btn');
   useEffect(() => {
     var i;
@@ -46,12 +45,6 @@ const App = () => {
       });
     }
   }, [dropdown]);
-
-
-
-
-
-
 
   return (
     <div className='Apper'>
@@ -80,10 +73,10 @@ const App = () => {
                 <ImageCollection images={images18_19} />
               </Route>
               <Route path='/works/2013'>
-                <ImageCarousel images={imagesKluuvi} />
+                <ImageCollection images={imagesKluuvi} />
               </Route>
               <Route path='/works/2011'>
-                <ImageCarousel images={katariina} />
+                <ImageCollection images={katariina} />
               </Route>
               <Route path='/cv'>
                 <Cv />

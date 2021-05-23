@@ -1,5 +1,6 @@
 import React from 'react';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
+import '../Page.css';
 
 const News = () => {
   const [email, setEmail] = React.useState('');
@@ -19,7 +20,7 @@ const News = () => {
   };
 
   return (
-    <div className="newsWrapper">
+    <div className='newsWrapper'>
       Subscribe for newsletter
       <div type='submit' onSubmit={subscribe}>
         <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />

@@ -4,7 +4,7 @@ import carousel from '../Img/18_19/carousel.jpg';
 import lucid from '../Img/18_19/lucid.jpg';
 import gardener from '../Img/18_19/gardener.jpg';
 import snowmen from '../Img/18_19/snowmen.jpg';
-import cocktail from '../Img/18_19/cocktail.jpg';
+/* import cocktail from '../Img/18_19/cocktail.jpg'; */
 import sanaa1 from '../Img/18_19/sanaa1.jpg';
 import sanaa2 from '../Img/18_19/sanaa2.jpg';
 import sanaa3 from '../Img/18_19/sanaa3.jpg';
@@ -41,11 +41,11 @@ const images18_19 = [
     technique: 'acrylic on canvas',
     imgUrl: snowmen,
   },
-  {
+  /* {
     title: 'Pinch, 2020, digital drawing',
     technique: 'acrylic on canvas',
     imgUrl: cocktail,
-  },
+  }, */
   {
     title: 'sinetti',
     technique: 'acrylic on canvas',

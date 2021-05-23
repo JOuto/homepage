@@ -200,7 +200,7 @@
   min-width: 80px;
   font-size: 1.2vw;
   padding: 0.2em;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 @media screen and (max-width: 800px) {
@@ -332,6 +332,7 @@ ul.nav li {
   }
 }
 .newsLetterButton {
+  padding-left: 20px;
   cursor: pointer;
   position: fixed;
   bottom: 50px;
@@ -358,6 +359,7 @@ ul.nav li {
 }
 
 .instaLink {
+  padding-left: 20px;
   cursor: pointer;
   position: fixed;
   bottom: 100px;

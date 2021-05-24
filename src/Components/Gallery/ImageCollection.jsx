@@ -21,7 +21,6 @@ const ImageCollection = ({ images, fullScreenView, setFullScreenView }) => {
           setFullScreenView(true);
         }}
         src={image.imgUrl}
-        width='100%'
         alt='imageItem'
       ></img>
     );

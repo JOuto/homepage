@@ -20,7 +20,7 @@ const Menu = () => {
             }
           }} */
           //onClick={() => setShow(!show)}
-          className='dropdown-btn'
+          className='dropdown-btn nofocus'
         >
           <span>Works</span>
           <Icon style={{ paddingLeft: '5px' }} name='caret down' size='small' />
@@ -53,7 +53,7 @@ const Menu = () => {
                 <Link to='/works/2011'>2011</Link>
               </li>
             </li>
-            <li>
+            <li className='nofocus'>
               <a href='#'>Animations</a>
             </li>
           </ul>
@@ -66,7 +66,7 @@ const Menu = () => {
             }
           }} */
           //onClick={() => setShow(!show)}
-          className='dropdown-btn'
+          className='dropdown-btn nofocus'
         >
           Biography
           <Icon style={{ paddingLeft: '5px' }} name='caret down' size='small' />
@@ -76,13 +76,13 @@ const Menu = () => {
             <li>
               <Link to='/cv'>CV</Link>
             </li>
-            <li>
-              <Link to='/cv'>About me</Link>
+            <li className='nofocus'>
+              <Link>About me</Link>
             </li>
           </ul>
         </div>
         <li>
-          <a href='/contact'>Contact</a>
+          <Link to='/contact'>Contact</Link>
         </li>
       </ul>
     </div>

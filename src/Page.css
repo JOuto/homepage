@@ -10,7 +10,7 @@
 
 /* LOGO */
 .logo {
-  font-size: 3vw;
+  font-size: 4vw;
   text-align: left;
   background-color: white;
   padding-bottom: 30px;
@@ -170,6 +170,8 @@
   margin-top: 70px;
   font-size: 1.2vw;
   line-height: 1.6em;
+  padding-bottom: 30px;
+  padding-left: 30px;
 }
 
 .cvWrapper h3 {
@@ -214,8 +216,14 @@
     padding-bottom: 30px;
   }
 }
-@media screen and (max-width: 300px) {
-  .menu {
+@media screen and (max-width: 400px) {
+  .contentWrapper {
+    max-width: 75%;
+
+    padding-left: 0px;
+  }
+  .imageCollectionThumb {
+    max-width: 200px;
   }
 }
 ul.nav {

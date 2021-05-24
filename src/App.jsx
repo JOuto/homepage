@@ -1,4 +1,5 @@
 import React from 'react';
+import $ from 'jquery';
 import Menu from './Components/Menu';
 import { useEffect, useState } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
@@ -30,6 +31,7 @@ const App = () => {
   const [showNewsletterSubs, setShowNewletterSubs] = React.useState(false);
   const [fullScreenView, setFullScreenView] = React.useState(false);
   var dropdown = document.getElementsByClassName('dropdown-btn');
+
   useEffect(() => {
     var i;
     for (i = 0; i < dropdown.length; i++) {
@@ -39,6 +41,9 @@ const App = () => {
         const x = dropdownContent.firstChild.childElementCount;
 
         console.log(x);
+        $('.nofocus').on('mousedown', function (e) {
+          return false;
+        });
 
         console.log(dropdownContent.style.display);
         if (
@@ -84,8 +89,8 @@ const App = () => {
           <Menu />
         </div>
 
-        <div className='contentWrapper'>
-          <div className='content'>
+        <div className='contentWrapper nofocus'>
+          <div className='nofocus'>
             <Switch>
               <Route path='/contact'>
                 <div style={{ position: 'absolute', top: '40px', left: '50%' }}>

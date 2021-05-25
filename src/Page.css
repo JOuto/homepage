@@ -24,6 +24,7 @@
   filter: hue-rotate(100deg);
   color: red;
   cursor: progress;
+  cursor: url('./logo.svg');
 }
 
 /* IMAGECOLLECTION */
@@ -218,7 +219,7 @@
 }
 @media screen and (max-width: 400px) {
   .contentWrapper {
-    max-width: 75%;
+    /*  max-width: 75%; */
 
     padding-left: 0px;
   }

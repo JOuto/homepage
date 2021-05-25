@@ -1,7 +1,10 @@
 /* MAIN */
 
 .Apper {
-  height: 1000px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  height: 100vh;
+  overflow: hidden;
   margin-bottom: 100px;
   position: relative;
   display: block;
@@ -40,6 +43,7 @@
   flex-wrap: wrap;
   background-color: white;
   align-content: center;
+  width: 100%;
 }
 .flexItem {
   margin: 20px;
@@ -56,6 +60,7 @@
 
 .contentWrapper {
   overflow-y: scroll;
+  overflow-x: hidden;
   background-color: white;
   padding-left: 30px;
   padding-top: 60px;
@@ -230,9 +235,6 @@
     font-size: 8px;
     width: 80%;
     padding-bottom: 30px;
-  }
-  .contentWrapper {
-    max-width: 500px;
   }
 }
 @media screen and (max-width: 400px) {

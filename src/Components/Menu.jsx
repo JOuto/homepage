@@ -3,15 +3,12 @@ import React from 'react';
 import '../Page.css';
 import { Icon } from 'semantic-ui-react';
 
-const Menu = ({ fullScreenView }) => {
+const Menu = () => {
   /* const [show, setShow] = React.useState(false);
   const hidden = { height: show ? '100px' : '0' }; */
 
-  const style = fullScreenView
-    ? { position: 'relative', zIndex: '-10' }
-    : { position: 'fixed', zIndex: '1' };
   return (
-    <div style={style}>
+    <div>
       <ul className='nav'>
         <li>
           <Link to='/news'>News</Link>

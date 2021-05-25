@@ -80,18 +80,16 @@ const App = () => {
         <NewsletterSubscribe setShowNewletterSubs={setShowNewletterSubs} />
       )}
 
-      <div className='flexContainer'>
-        {!fullScreenView && (
-          <div className='menu'>
-            <Link to='/' className='indexLink'>
-              <div className='logo'>
-                <p>JOUNI</p>TONI
-                {/* <img src={logo3} width='80%' alt='logo'></img> */}
-              </div>
-            </Link>
-            <Menu fullScreenView={fullScreenView} />
-          </div>
-        )}
+      <div /* className='flexContainer' */>
+        <div className='menu'>
+          <Link to='/' className='indexLink'>
+            <div className='logo'>
+              <p>JOUNI</p>TONI
+              {/* <img src={logo3} width='80%' alt='logo'></img> */}
+            </div>
+          </Link>
+          <Menu />
+        </div>
 
         <div className='contentWrapper nofocus'>
           <Switch>

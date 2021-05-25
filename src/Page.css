@@ -191,7 +191,7 @@
 .menu {
   position: fixed;
 
-  border-right: 1px lightgray solid;
+  /* border-right: 1px lightgray solid; */
   padding: 0px;
   background-color: white;
   height: 100%;
@@ -204,6 +204,15 @@
   font-size: 1.2vw;
   padding: 0.2em;
   padding-left: 20px;
+}
+.verticalDivider {
+  position: fixed;
+  left: 23%;
+  height: 100%;
+  width: 1px;
+  border-left: 1px lightgray solid;
+
+  z-index: 500;
 }
 
 @media screen and (max-width: 800px) {

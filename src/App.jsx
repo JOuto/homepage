@@ -73,6 +73,7 @@ const App = () => {
           >
             <img src={newsLogo} alt='newsLogo' height='150em'></img>
           </div>
+          <div className='verticalDivider'></div>
         </div>
       )}
       {showNewsletterSubs && (

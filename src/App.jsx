@@ -57,9 +57,10 @@ const App = () => {
       });
     }
   }, [dropdown, fullScreenView]);
-
+  const menuStyle = fullScreenView ? { opacity: '0' } : { opacity: '1' };
   return (
     <div className='Apper'>
+      {/* {fullScreenView && <div className='fullScreenDimmerForMenu'></div>} */}
       {!fullScreenView && (
         <div>
           <div className='instaLink'>
@@ -82,7 +83,7 @@ const App = () => {
 
       <div /* className='flexContainer' */>
         {/* {!fullScreenView && ( */}
-        <div className='menu'>
+        <div className='menu' style={menuStyle}>
           <Link to='/' className='indexLink'>
             <div className='logo'>
               <p>JOUNI</p>TONI

@@ -100,7 +100,9 @@
 .prevNextWrapper {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 60%;
+  top: 17%;
+  z-index: 9999;
 }
 .prev {
   width: 50%;

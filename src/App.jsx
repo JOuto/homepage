@@ -89,7 +89,7 @@ const App = () => {
                 {/* <img src={logo3} width='80%' alt='logo'></img> */}
               </div>
             </Link>
-            <Menu />
+            <Menu fullScreenView={fullScreenView} />
           </div>
         )}
 

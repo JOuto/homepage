@@ -62,7 +62,11 @@ const FullscreenView = ({
           <img
             className='imageCollectionImg'
             style={{ paddingTop: '80px' }}
-            src={images && images[imageIndex].imgUrl}
+            src={
+              images
+                ? images[imageIndex].imgUrl
+                : '../../Img/18_19/apartment.jpg'
+            }
             alt='img'
             /* height='90%' */
 

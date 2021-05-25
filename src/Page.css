@@ -213,7 +213,7 @@
 }
 .verticalDivider {
   position: fixed;
-  left: 23%;
+  left: 22%;
   height: 100%;
   width: 1px;
   border-left: 1px lightgray solid;
@@ -230,6 +230,9 @@
     font-size: 8px;
     width: 80%;
     padding-bottom: 30px;
+  }
+  .contentWrapper {
+    max-width: 500px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -253,7 +256,7 @@ ul.nav li {
   line-height: 1.6em;
 }
 ul.nav a {
-/*   z-index: 4; */
+  /*   z-index: 4; */
   padding: 0px;
   text-decoration: none;
   font-weight: 600;

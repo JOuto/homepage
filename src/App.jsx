@@ -104,13 +104,18 @@ const App = () => {
                 </div>
               </Route>
               <Route path='/works/2018'>
-                <ImageCollection
-                  images={images18_19}
-                  fullScreenView={fullScreenView}
-                  setFullScreenView={setFullScreenView}
-                />
+                <div>
+                  {' '}
+                  <p className='galleryTitle'>2018-19</p>
+                  <ImageCollection
+                    images={images18_19}
+                    fullScreenView={fullScreenView}
+                    setFullScreenView={setFullScreenView}
+                  />
+                </div>
               </Route>
               <Route path='/works/2013'>
+                <p className='galleryTitle'>2013</p>
                 <ImageCollection
                   images={imagesKluuvi}
                   fullScreenView={fullScreenView}
@@ -118,6 +123,7 @@ const App = () => {
                 />
               </Route>
               <Route path='/works/2011'>
+                <p className='galleryTitle'>2011</p>
                 <ImageCollection
                   images={katariina}
                   fullScreenView={fullScreenView}
@@ -129,6 +135,7 @@ const App = () => {
               </Route>
 
               <Route path='/works/2015'>
+                <p className='galleryTitle'>2015</p>
                 <ImageCollection
                   images={images2015}
                   fullScreenView={fullScreenView}
@@ -136,6 +143,7 @@ const App = () => {
                 />
               </Route>
               <Route path='/works/2016'>
+                <p className='galleryTitle'>2016</p>
                 <ImageCollection
                   images={images2016}
                   fullScreenView={fullScreenView}
@@ -143,6 +151,7 @@ const App = () => {
                 />
               </Route>
               <Route path='/works/2016tm'>
+                <p className='galleryTitle'>2016 Tm-Gallery</p>
                 <ImageCollection
                   images={images2016tm}
                   fullScreenView={fullScreenView}
@@ -150,6 +159,7 @@ const App = () => {
                 />
               </Route>
               <Route path='/works/2014'>
+                <p className='galleryTitle'>2014</p>
                 <ImageCollection
                   images={images2014}
                   fullScreenView={fullScreenView}
@@ -157,6 +167,7 @@ const App = () => {
                 />
               </Route>
               <Route path='/works/2017'>
+                <p className='galleryTitle'>2017</p>
                 <ImageCollection
                   images={images2017}
                   fullScreenView={fullScreenView}

@@ -57,12 +57,10 @@ const App = () => {
       });
     }
   }, [dropdown, fullScreenView]);
-  const menuStyle = fullScreenView
-    ? { opacity: '1', width: '0%' }
-    : { opacity: '1', width: '22%' };
+  const menuStyle = fullScreenView ? { width: '0%' } : { width: '22%' };
   const contentWrapperStyle = fullScreenView
     ? { width: '100%' }
-    : { width: '78' };
+    : { width: '78%' };
   return (
     <div className='Apper'>
       {/* {fullScreenView && <div className='fullScreenDimmerForMenu'></div>} */}

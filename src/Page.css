@@ -3,6 +3,7 @@
 .Apper {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  z-index: 0;
   height: 100vh;
   overflow: hidden;
   margin-bottom: 100px;
@@ -118,7 +119,10 @@
 
 .fullScreenDimmer {
   background-color: black;
-
+  /* -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); */
+  position: fixed;
+  z-index: 9999;
   opacity: 0.8;
   height: 100vh;
   width: 100vw;

@@ -81,6 +81,7 @@ const App = () => {
       )}
 
       <div /* className='flexContainer' */>
+        {/* {!fullScreenView && ( */}
         <div className='menu'>
           <Link to='/' className='indexLink'>
             <div className='logo'>

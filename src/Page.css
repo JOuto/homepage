@@ -222,7 +222,7 @@
 /* MENU */
 .menu {
   position: fixed;
-
+  overflow: hidden;
   /* border-right: 1px lightgray solid; */
   padding: 0px;
   background-color: white;

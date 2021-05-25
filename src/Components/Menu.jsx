@@ -8,7 +8,7 @@ const Menu = () => {
   const hidden = { height: show ? '100px' : '0' }; */
 
   return (
-    <div>
+    <div style={{ zIndex: '1' }}>
       <ul className='nav'>
         <li>
           <Link to='/news'>News</Link>

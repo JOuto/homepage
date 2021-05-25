@@ -79,6 +79,7 @@ const App = () => {
       {showNewsletterSubs && (
         <NewsletterSubscribe setShowNewletterSubs={setShowNewletterSubs} />
       )}
+
       <div className='flexContainer'>
         {!fullScreenView && (
           <div className='menu'>

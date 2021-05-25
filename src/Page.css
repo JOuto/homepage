@@ -253,7 +253,7 @@ ul.nav li {
   line-height: 1.6em;
 }
 ul.nav a {
-  z-index: 4;
+/*   z-index: 4; */
   padding: 0px;
   text-decoration: none;
   font-weight: 600;
@@ -279,7 +279,7 @@ ul.nav a:active {
 
 ul.nav li {
   display: block;
-  z-index: 5;
+  /* z-index: 5; */
 }
 .dropdown-btn {
   cursor: pointer;

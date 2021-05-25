@@ -56,7 +56,7 @@ const App = () => {
         }
       });
     }
-  }, [dropdown]);
+  }, [dropdown, fullScreenView]);
 
   return (
     <div className='Apper'>
@@ -80,15 +80,17 @@ const App = () => {
         <NewsletterSubscribe setShowNewletterSubs={setShowNewletterSubs} />
       )}
       <div className='flexContainer'>
-        <div className='menu'>
-          <Link to='/' className='indexLink'>
-            <div className='logo'>
-              <p>JOUNI</p>TONI
-              {/* <img src={logo3} width='80%' alt='logo'></img> */}
-            </div>
-          </Link>
-          <Menu />
-        </div>
+        {!fullScreenView && (
+          <div className='menu'>
+            <Link to='/' className='indexLink'>
+              <div className='logo'>
+                <p>JOUNI</p>TONI
+                {/* <img src={logo3} width='80%' alt='logo'></img> */}
+              </div>
+            </Link>
+            <Menu />
+          </div>
+        )}
 
         <div className='contentWrapper nofocus'>
           <div className='nofocus'>

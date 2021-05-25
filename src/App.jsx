@@ -57,7 +57,12 @@ const App = () => {
       });
     }
   }, [dropdown, fullScreenView]);
-  const menuStyle = fullScreenView ? { opacity: '0' } : { opacity: '1' };
+  const menuStyle = fullScreenView
+    ? { opacity: '1', width: '0%' }
+    : { opacity: '1', width: '22%' };
+  const contentWrapperStyle = fullScreenView
+    ? { width: '100%' }
+    : { width: '78' };
   return (
     <div className='Apper'>
       {/* {fullScreenView && <div className='fullScreenDimmerForMenu'></div>} */}
@@ -93,7 +98,7 @@ const App = () => {
           <Menu />
         </div>
 
-        <div className='contentWrapper nofocus'>
+        <div className='contentWrapper nofocus' style={contentWrapperStyle}>
           <Switch>
             <Route path='/contact'>
               <div style={{ position: 'absolute', top: '40px', left: '50%' }}>

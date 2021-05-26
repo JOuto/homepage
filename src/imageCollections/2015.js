@@ -5,6 +5,10 @@ import hats from '../Img/15/hats.jpg';
 import icecream from '../Img/15/icecream.jpg';
 import mirage from '../Img/15/mirage.jpg';
 import queue from '../Img/15/queue.jpg';
+import skyscraper from '../Img/15/skyscraper.jpg';
+import winter from '../Img/15/winter.jpg';
+import tragedy from '../Img/15/tragedy.jpg';
+import spring from '../Img/15/spring.jpg';
 import rijks1 from '../Img/15/rijks1.jpg';
 import rijks2 from '../Img/15/rijks2.jpg';
 import rijks3 from '../Img/15/rijks3.jpg';
@@ -38,6 +42,26 @@ const images2015 = [
     title: 'Fruits, 2011',
     technique: 'acrylic on canvas 130x100 cm',
     imgUrl: icecream,
+  },
+  {
+    title: 'Fruits, 2011',
+    technique: 'acrylic on canvas 130x100 cm',
+    imgUrl: skyscraper,
+  },
+  {
+    title: 'Fruits, 2011',
+    technique: 'acrylic on canvas 130x100 cm',
+    imgUrl: winter,
+  },
+  {
+    title: 'Fruits, 2011',
+    technique: 'acrylic on canvas 130x100 cm',
+    imgUrl: tragedy,
+  },
+  {
+    title: 'Fruits, 2011',
+    technique: 'acrylic on canvas 130x100 cm',
+    imgUrl: spring,
   },
   {
     title: 'Against the surface, 2011',

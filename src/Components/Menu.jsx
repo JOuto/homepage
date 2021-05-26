@@ -4,8 +4,13 @@ import '../Page.css';
 import { Icon } from 'semantic-ui-react';
 
 const Menu = () => {
+  const [worksHeight, setWorksHeight] = React.useState(0);
+  const [bioHeight, setBioHeight] = React.useState(0);
   /* const [show, setShow] = React.useState(false);
   const hidden = { height: show ? '100px' : '0' }; */
+
+  const worksDropDownStyle = { height: worksHeight };
+  const bioDropDownStyle = { height: bioHeight };
 
   return (
     <div>
@@ -14,21 +19,22 @@ const Menu = () => {
           <Link to='/news'>News</Link>
         </li>
         <button
-          /* onClick={() => {
-            if (container[0].style.display === 'none') {
-              container[0].style.display = 'block';
-            }
-          }} */
-          //onClick={() => setShow(!show)}
+          
+          onClick={() =>
+            setWorksHeight(worksHeight === 0 || undefined ? 9 * 1.6 + 'em' : 0)
+          }
           className='dropdown-btn nofocus'
         >
           <span>Works</span>
           <Icon style={{ paddingLeft: '5px' }} name='caret down' size='small' />
         </button>
-        <div className='dropdown-container'>
+        <div className='dropdown-container' style={worksDropDownStyle}>
           <ul className='nav' id='worksDropdown'>
             <li>
-              <Link to='/works/2018'>2018-19</Link>
+              <Link to='/works/201819'>2018-19</Link>
+            </li>
+            <li>
+              <Link to='/works/201718'>2017-18</Link>
             </li>
             <li>
               <Link to='/works/2017'>2017</Link>
@@ -60,24 +66,21 @@ const Menu = () => {
         </div>
 
         <button
-          /* onClick={() => {
-            if (container[0].style.display === 'none') {
-              container[0].style.display = 'block';
-            }
-          }} */
-          //onClick={() => setShow(!show)}
+          onClick={() =>
+            setBioHeight(bioHeight === 0 || undefined ? 2 * 1.6 + 'em' : 0)
+          }
           className='dropdown-btn nofocus'
         >
           Biography
           <Icon style={{ paddingLeft: '5px' }} name='caret down' size='small' />
         </button>
-        <div className='dropdown-container'>
+        <div className='dropdown-container' style={bioDropDownStyle}>
           <ul className='nav' id='biographyDropdown'>
             <li>
               <Link to='/cv'>CV</Link>
             </li>
             <li className='nofocus'>
-              <Link>About me</Link>
+              <Link to='/cv'>About me</Link>
             </li>
           </ul>
         </div>

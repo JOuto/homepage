@@ -1,14 +1,11 @@
 import React from 'react';
 import $ from 'jquery';
 import Menu from './Components/Menu';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import News from './Components/News';
 import './Page.css';
-import logo from './Img/logo.png';
-import logo3 from './Img/logo3.png';
-import jtLogo from './Img/JTlogo.png';
-import ImageCarousel from './Components/Gallery/ImageCarousel';
+
 import Cv from './Components/CvPage';
 import NewsletterSubscribe from './Components/NewsletterSubs';
 import Index from './Components/Index';
@@ -17,13 +14,14 @@ import ImageCollection from './Components/Gallery/ImageCollection';
 import ContactPage from './Components/Contact';
 import katariina from './imageCollections/2011';
 import images18_19 from './imageCollections/2018-19';
+import images17_18 from './imageCollections/2017-18';
 import imagesKluuvi from './imageCollections/2013kluuvi';
 import images2017 from './imageCollections/2017';
 import images2015 from './imageCollections/2015';
 import images2016tm from './imageCollections/2016tm';
 import images2014 from './imageCollections/2014';
 import images2016 from './imageCollections/2016';
-import images17_18 from './imageCollections/2017-18';
+
 import newsLogo from './Img/news.png';
 import instaLogo from './Img/insta.png';
 
@@ -32,7 +30,7 @@ const App = () => {
   const [fullScreenView, setFullScreenView] = React.useState(false);
   var dropdown = document.getElementsByClassName('dropdown-btn');
 
-  useEffect(() => {
+  /*   useEffect(() => {
     var i;
     for (i = 0; i < dropdown.length; i++) {
       dropdown[i].addEventListener('click', function () {
@@ -56,14 +54,13 @@ const App = () => {
         }
       });
     }
-  }, [dropdown, fullScreenView]);
+  }, [dropdown, fullScreenView]); */
   const menuStyle = fullScreenView ? { width: '0%' } : { width: '22%' };
   const contentWrapperStyle = fullScreenView
     ? { width: '100%' }
     : { width: '78%' };
   return (
     <div className='Apper'>
-      {/* {fullScreenView && <div className='fullScreenDimmerForMenu'></div>} */}
       {!fullScreenView && (
         <div>
           <div className='instaLink'>
@@ -96,7 +93,14 @@ const App = () => {
           <Menu />
         </div>
 
-        <div className='contentWrapper nofocus' style={contentWrapperStyle}>
+        <div
+          className='contentWrapper'
+          style={contentWrapperStyle}
+          onMouseDown={(e) => {
+            e.preventDefault();
+            return false;
+          }}
+        >
           <Switch>
             <Route path='/contact'>
               <div style={{ position: 'absolute', top: '40px', left: '50%' }}>
@@ -108,7 +112,7 @@ const App = () => {
                 <News />
               </div>
             </Route>
-            <Route path='/works/2018'>
+            <Route path='/works/201819'>
               <div>
                 {' '}
                 <p className='galleryTitle'>2018-19</p>
@@ -180,7 +184,7 @@ const App = () => {
               />
             </Route>
 
-            <Route path='/works/20118'>
+            <Route path='/works/201718'>
               <ImageCollection
                 images={images17_18}
                 fullScreenView={fullScreenView}

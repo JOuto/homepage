@@ -7,6 +7,7 @@ const ImageInfoBar = ({ image }) => {
         <div className='infoBarContent'>
           <p className='title'>{image.title}</p>
           <p>{image.technique}</p>
+          {image.info && <i>{image.info}</i>}
         </div>
       </div>
     );

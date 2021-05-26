@@ -28,7 +28,7 @@ import instaLogo from './Img/insta.png';
 const App = () => {
   const [showNewsletterSubs, setShowNewletterSubs] = React.useState(false);
   const [fullScreenView, setFullScreenView] = React.useState(false);
-  var dropdown = document.getElementsByClassName('dropdown-btn');
+  //var dropdown = document.getElementsByClassName('dropdown-btn');
 
   /*   useEffect(() => {
     var i;
@@ -81,13 +81,13 @@ const App = () => {
         <NewsletterSubscribe setShowNewletterSubs={setShowNewletterSubs} />
       )}
 
-      <div /* className='flexContainer' */>
-        {/* {!fullScreenView && ( */}
+      <div >
+        
         <div className='menu' style={menuStyle}>
           <Link to='/' className='indexLink'>
             <div className='logo'>
               <p>JOUNI</p>TONI
-              {/* <img src={logo3} width='80%' alt='logo'></img> */}
+             
             </div>
           </Link>
           <Menu />
@@ -185,6 +185,7 @@ const App = () => {
             </Route>
 
             <Route path='/works/201718'>
+            <p className='galleryTitle'>2017-18</p>
               <ImageCollection
                 images={images17_18}
                 fullScreenView={fullScreenView}

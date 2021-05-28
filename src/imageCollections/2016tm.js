@@ -10,48 +10,50 @@ import worstcase from '../Img/16tm/worstcase.jpg';
 
 const images2016tm = [
   {
-    title: 'Untitled, 2013',
-    technique: 'acrylic on canvas',
+    title: 'Closeout sale, 2016',
+    technique: 'acrylic on canvas 200x150cm',
     imgUrl: closeout,
   },
   {
-    title: 'Flag with red and white, 2013',
-    technique: 'acrylic on canvas',
+    title: 'Facade, 2016',
+    technique: 'acrylic on canvas 200x150cm',
+    info: 'Gofore collction',
     imgUrl: facade,
   },
   {
-    title: 'Wiper, 2013',
-    technique: 'acrylic on canvas',
+    title: 'I have to concentrate, 2016',
+    technique: 'acrylic on canvas 260x180cm',
     imgUrl: ihaveto,
   },
   {
-    title: 'Scale, 2013',
-    technique: 'acrylic on canvas',
+    title: 'Narrow road, 2016',
+    technique: 'acrylic on canvas 200x137cm',
     imgUrl: narrow,
   },
   {
-    title: 'Regeneration, 2013',
-    technique: 'acrylic on canvas',
+    title: 'Occupied, 2016',
+    technique: 'acrylic on canvas 200x150cm',
+    info: 'Gofore collection',
     imgUrl: occupied,
   },
   {
-    title: 'Untitled (detail), 2020, digital drawing',
-    technique: 'acrylic on canvas',
+    title: 'Worst case scenario, 2016',
+    technique: 'acrylic on canvas 70x55cm',
     imgUrl: worstcase,
   },
   {
-    title: 'Pinch, 2020, digital drawing',
-    technique: 'acrylic on canvas',
+    title: `Solo-exhibition "Occupied", TM-Gallery 2016`,
+    technique: '',
     imgUrl: install1,
   },
   {
-    title: 'sinetti',
-    technique: 'acrylic on canvas',
+    title: 'Solo-exhibition "Occupied", TM-Gallery 2016',
+    technique: '',
     imgUrl: install2,
   },
   {
-    title: 'sinetti',
-    technique: 'acrylic on canvas',
+    title: 'Solo-exhibition "Occupied", TM-Gallery 2016',
+    technique: '',
     imgUrl: install3,
   },
 ];

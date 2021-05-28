@@ -9,43 +9,46 @@ import threeD from '../Img/13kl/threeD.jpg';
 
 const kluuvi = [
   {
-    title: 'Untitled, 2013',
-    technique: 'acrylic on canvas',
+    title: 'Record player, 2013',
+    technique: 'acrylic on canvas 116x89cm ',
     imgUrl: record,
   },
   {
     title: 'Flag with red and white, 2013',
-    technique: 'acrylic on canvas',
+    technique: 'acrylic on canvas 110x92cm',
+    info: "private collection",
     imgUrl: pvLippu,
   },
   {
     title: 'Wiper, 2013',
-    technique: 'acrylic on canvas',
+    technique: 'acrylic on canvas 116x89cm',
     imgUrl: wiper,
   },
   {
     title: 'Scale, 2013',
-    technique: 'acrylic on canvas',
+    technique: 'acrylic on canvas 40x40cm',
+    info: "private collection",
     imgUrl: regeneration,
   },
   {
     title: 'Regeneration, 2013',
-    technique: 'acrylic on canvas',
+    technique: 'acrylic on canvas 160x120cm',
     imgUrl: lastPainting,
   },
   {
-    title: 'Untitled (detail), 2020, digital drawing',
-    technique: 'acrylic on canvas',
+    title: 'Briefcase, 2012',
+    technique: 'acrylic on canvas 110x92cm',
     imgUrl: salkku,
   },
   {
-    title: 'Pinch, 2020, digital drawing',
-    technique: 'acrylic on canvas',
+    title: '3D, 2013',
+    technique: 'acrylic on canvas 40x30cm',
     imgUrl: threeD,
   },
   {
-    title: 'sinetti',
-    technique: 'acrylic on canvas',
+    title: 'Button on top II, ',
+    technique: 'acrylic on canvas 110x92cm',
+    info: "private collection",
     imgUrl: button,
   },
 ];

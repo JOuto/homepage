@@ -6,28 +6,29 @@ import woodcutter from '../Img/16/woodcutter.jpg';
 
 const images2016 = [
   {
-    title: 'Untitled, 2013',
-    technique: 'acrylic on canvas',
+    title: 'Between seasons, 2016',
+    technique: 'acrylic on canvas 200x150cm',
+    info: "ING collection",
     imgUrl: between,
   },
   {
-    title: 'Flag with red and white, 2013',
-    technique: 'acrylic on canvas',
+    title: 'Forest gallery, 2016',
+    technique: 'acrylic on canvas 200x150cm',
     imgUrl: gallery,
   },
   {
-    title: 'Wiper, 2013',
-    technique: 'acrylic on canvas',
+    title: 'Jungle swamp, 2016',
+    technique: 'acrylic on canvas 200x150cm',
     imgUrl: jungle,
   },
   {
-    title: 'Scale, 2013',
-    technique: 'acrylic on canvas',
+    title: 'Weak spot, 2016',
+    technique: 'acrylic on canvas 200x150cm',
     imgUrl: weakspot,
   },
   {
-    title: 'Regeneration, 2013',
-    technique: 'acrylic on canvas',
+    title: 'Woodcutter, 2016',
+    technique: 'acrylic on canvas 200x150cm',
     imgUrl: woodcutter,
   },
  

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../Page.css';
 import ImageInfoBar from './ImageInfoBar';
+import cross from '../../Img/cross.png';
 
 const FullscreenView = ({
   setFullScreenView,
@@ -37,12 +38,12 @@ const FullscreenView = ({
         ></div>
 
         <div className='fullScreenContent' style={displayStyle}>
-          <button
+          <div
             className='closeFullscreenButton'
             onClick={() => setFullScreenView(false)}
           >
-            x
-          </button>
+            <img src={cross} width='100%' alt='cross'></img>
+          </div>
           <div className='prevNextWrapper'>
             <div
               className='prev'

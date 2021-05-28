@@ -8,58 +8,65 @@ import skysail from '../Img/14/skysail.jpg';
 import untitled from '../Img/14/untitled.jpg';
 import wave from '../Img/14/wave.jpg';
 import yellow from '../Img/14/yellow.jpg';
+import still from '../Img/14/stilllife.jpg';
 
 const images2014 = [
   {
-    title: 'Untitled, 2013',
-    technique: 'acrylic on canvas',
+    title: 'Deserted island, 2014',
+    technique: 'wax pastel on paper 30x20cm',
     imgUrl: palm,
   },
   {
-    title: 'Flag with red and white, 2013',
-    technique: 'acrylic on canvas',
+    title: 'Passing blue, 2014',
+    technique: 'acrylic on canvas 120x100cm',
     imgUrl: passing,
   },
   {
-    title: 'Wiper, 2013',
-    technique: 'acrylic on canvas',
-    imgUrl: race,
-  },
-  {
-    title: 'Scale, 2013',
-    technique: 'acrylic on canvas',
+    title: 'Bypass, 2014',
+    technique: 'pastel on paper 30x20cm',
     imgUrl: redblue,
   },
   {
-    title: 'Regeneration, 2013',
-    technique: 'acrylic on canvas',
+    title: 'Race, 2014',
+    technique: 'acrylic on canvas 120x100cm',
+    imgUrl: race,
+  },
+  {
+    title: 'Entrance, 2014',
+    technique: 'wax pastel on paper 30x20cm',
     imgUrl: shopfront,
   },
   {
-    title: 'Untitled (detail), 2020, digital drawing',
-    technique: 'acrylic on canvas',
+    title: 'Shore, 2014',
+    technique: 'acrylic on canvas 120x100cm',
     imgUrl: shore,
   },
   {
-    title: 'Pinch, 2020, digital drawing',
-    technique: 'acrylic on canvas',
+    title: 'Sky/sail, 2014',
+    technique: 'wax pastel on paper 30x20cm',
     imgUrl: skysail,
   },
   {
-    title: 'sinetti',
-    technique: 'acrylic on canvas',
+    title: 'Untitled (black sail), 2014',
+    technique: 'acrylic on canvas 100x80cm',
     imgUrl: untitled,
   },
 
   {
-    title: 'sinetti',
-    technique: 'acrylic on canvas',
+    title: 'Beach, 2014',
+    technique: 'wax pastel on paper 30x20cm',
     imgUrl: wave,
   },
   {
-    title: 'sinetti',
-    technique: 'acrylic on canvas',
+    title: 'Yellow potential, 2014',
+    technique: 'acrylic on canvas 120x100cm',
+    info: 'Kankaanpää art association',
     imgUrl: yellow,
+  },
+  {
+    title: 'Still life, 2014',
+    technique: 'acrylic on canvas 100x80cm',
+    imgUrl: still,
   },
 ];
 export default images2014;

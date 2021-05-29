@@ -94,6 +94,7 @@ const App = () => {
         <div className='menu' style={menuStyle}>
           <Link to='/' className='indexLink'>
             <div className='logo'>
+              {' '}
               <p>JOUNI</p>TONI
             </div>
           </Link>

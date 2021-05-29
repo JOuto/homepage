@@ -454,6 +454,13 @@ ul.nav li {
 .indexLink {
   color: black;
 }
+.indexWrapper {
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .credits {
   text-align: center;
   font-size: 0.8vw;

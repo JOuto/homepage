@@ -28,9 +28,13 @@ import instaLogo from './Img/insta.png';
 const App = () => {
   const [showNewsletterSubs, setShowNewletterSubs] = React.useState(false);
   const [fullScreenView, setFullScreenView] = React.useState(false);
-  //var dropdown = document.getElementsByClassName('dropdown-btn');
 
-  /*   useEffect(() => {
+  /*   
+  Alternative way for dropdown menu:
+
+  var dropdown = document.getElementsByClassName('dropdown-btn');
+  
+  useEffect(() => {
     var i;
     for (i = 0; i < dropdown.length; i++) {
       dropdown[i].addEventListener('click', function () {
@@ -59,6 +63,7 @@ const App = () => {
   const contentWrapperStyle = fullScreenView
     ? { width: '100%' }
     : { width: '78%' };
+
   return (
     <div className='Apper'>
       {!fullScreenView && (

@@ -85,7 +85,7 @@ const App = () => {
       {showNewsletterSubs && (
         <NewsletterSubscribe setShowNewletterSubs={setShowNewletterSubs} />
       )}
-      {!fullScreenView && (
+      {!fullScreenView && !showNewsletterSubs && (
         <div className='credits'>
           <span>content & web design © Jouni Toni 2021</span>
         </div>

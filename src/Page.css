@@ -15,10 +15,7 @@
   font-size: 4vw;
   text-align: left;
   /* background-color: white; */
-  background-image: url('./Img/backgroundImage.png');
-  background-position: left; /* Center the image */
-  background-repeat: repeat; /* Do not repeat the image */
-  background-size: cover;
+
   padding-bottom: 30px;
   transition-property: all;
   transition-duration: 0.5s;

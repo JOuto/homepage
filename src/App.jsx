@@ -80,7 +80,11 @@ const App = () => {
       {showNewsletterSubs && (
         <NewsletterSubscribe setShowNewletterSubs={setShowNewletterSubs} />
       )}
-
+      {!fullScreenView && (
+        <div className='credits'>
+          <span>content & web design © Jouni Toni 2021</span>
+        </div>
+      )}
       <div>
         <div className='menu' style={menuStyle}>
           <Link to='/' className='indexLink'>

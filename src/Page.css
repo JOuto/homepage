@@ -454,6 +454,17 @@ ul.nav li {
 .indexLink {
   color: black;
 }
+.credits {
+  text-align: center;
+  font-size: 0.8vw;
+  transform: rotate(-90deg);
+  position: fixed;
+  right: -4%;
+  z-index: 9999;
+  width: 20em;
+  bottom: 15%;
+  border: 1px lightgray solid;
+}
 /* .rollDown {
   animation-name: rollDown;
   animation-fill-mode: both;

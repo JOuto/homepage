@@ -106,9 +106,7 @@ const App = () => {
               </div>
             </Route>
             <Route path='/news'>
-              <div style={{ position: 'absolute', top: '40px', left: '50%' }}>
-                <News />
-              </div>
+              <News />
             </Route>
             <Route path='/works/201819'>
               <div>

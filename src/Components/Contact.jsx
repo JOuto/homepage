@@ -1,6 +1,6 @@
 const ContactPage = () => {
   return (
-    <div>
+    <div className='contact'>
       <p>jouni.toni@gmail.com</p>
       <p>0407091741</p>
     </div>

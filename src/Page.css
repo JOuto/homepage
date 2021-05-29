@@ -189,11 +189,32 @@
 }
 
 .galleryTitle {
+  position: fixed;
+  left: 22%;
+  background-color: white;
+  z-index: 50;
+  top: 0;
+  border: solid 1px lightgrey;
   font-size: 1vw;
-  position: relative;
+  width: 6em;
   color: gray;
-  left: +35%;
 }
+/* Contact */
+.contact {
+  font-size: 1.2vw;
+  text-align: center;
+}
+/* credits */
+/* .credits {
+  color: grey;
+  font-size: 0.8vw;
+  padding: 0.2vw;
+  position: fixed;
+  border: dotted 1px lightgrey;
+  bottom: 0;
+  left: 0;
+  z-index: 9990;
+} */
 /*CV*/
 .cvWrapper {
   /* margin-right: 110px; */
@@ -205,7 +226,17 @@
   padding-bottom: 30px;
   padding-left: 30px;
 }
-
+.showCvFiButton {
+  cursor: pointer;
+  line-height: 3vw;
+  font-size: 1.6vw;
+  border: solid 1px lightgrey;
+  height: 3vw;
+  width: 3vw;
+  position: fixed;
+  left: 22%;
+  top: 0;
+}
 .cvWrapper h3 {
   font-size: 1.8vw;
   line-height: 1.6em;

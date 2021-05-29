@@ -59,18 +59,18 @@ const images17_18 = [
   },
   {
     title: 'Midsummer, 2018',
-    technique: 'acrylic on canvas 250x200 cm',
+    technique: 'acrylic on canvas 250x200cm',
     info: 'DELA collection',
     imgUrl: midsum,
   },
   {
-    title: 'sinetti',
-    technique: 'acrylic on canvas',
+    title: 'Spin, 2017',
+    technique: 'acrylic on canvas 140x100cm',
     imgUrl: spin,
   },
   {
-    title: '',
-    technique: 'acrylic on canvas',
+    title: 'Solo exhibition "Good is up", WOW Amsterdam, 2018',
+    technique: '',
     imgUrl: install1,
   },
   {

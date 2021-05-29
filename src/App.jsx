@@ -6,7 +6,7 @@ import { Switch, Route, Link } from 'react-router-dom';
 import News from './Components/News';
 import './Page.css';
 
-import Cv from './Components/CvPage';
+import Cv from './Components/CV/CvPage';
 import NewsletterSubscribe from './Components/NewsletterSubs';
 import Index from './Components/Index';
 
@@ -81,13 +81,11 @@ const App = () => {
         <NewsletterSubscribe setShowNewletterSubs={setShowNewletterSubs} />
       )}
 
-      <div >
-        
+      <div>
         <div className='menu' style={menuStyle}>
           <Link to='/' className='indexLink'>
             <div className='logo'>
               <p>JOUNI</p>TONI
-             
             </div>
           </Link>
           <Menu />
@@ -185,7 +183,7 @@ const App = () => {
             </Route>
 
             <Route path='/works/201718'>
-            <p className='galleryTitle'>2017-18</p>
+              <p className='galleryTitle'>2017-18</p>
               <ImageCollection
                 images={images17_18}
                 fullScreenView={fullScreenView}

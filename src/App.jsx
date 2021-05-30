@@ -25,6 +25,8 @@ import images2016 from './imageCollections/2016';
 import newsLogo from './Img/news.png';
 import instaLogo from './Img/insta.png';
 
+
+
 const App = () => {
   const [showNewsletterSubs, setShowNewletterSubs] = React.useState(false);
   const [fullScreenView, setFullScreenView] = React.useState(false);

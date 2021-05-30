@@ -276,6 +276,7 @@
   padding-left: 20px;
 }
 .verticalDivider {
+  transform: rotate(-deg);
   position: fixed;
   left: 22%;
   height: 100%;

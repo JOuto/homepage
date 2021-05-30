@@ -20,7 +20,7 @@ const Menu = () => {
         </li>
         <button
           onClick={() =>
-            setWorksHeight(worksHeight === 0 || undefined ? 10 * 1.6 + 'em' : 0)
+            setWorksHeight(worksHeight === 0 || undefined ? 9 * 1.6 + 'em' : 0)
           }
           className='dropdown-btn nofocus'
         >

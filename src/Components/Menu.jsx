@@ -58,9 +58,9 @@ const Menu = () => {
                 <Link to='/works/2011'>2011</Link>
               </li>
             </li>
-            <li className='nofocus'>
+            {/*  <li className='nofocus'>
               <a href='#'>Animations</a>
-            </li>
+            </li> */}
           </ul>
         </div>
 

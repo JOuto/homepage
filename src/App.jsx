@@ -87,7 +87,7 @@ const App = () => {
       )}
       {!fullScreenView && !showNewsletterSubs && (
         <div className='credits'>
-          <span>content & web design © Jouni Toni 2021</span>
+          <span>content & web design © Jouni Toni</span>
         </div>
       )}
       <div>

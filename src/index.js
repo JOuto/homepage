@@ -7,12 +7,12 @@ import 'semantic-ui-css/semantic.min.css';
 import HttpsRedirect from 'react-https-redirect';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <HttpsRedirect>
+  <HttpsRedirect>
+    <React.StrictMode>
       <Router>
         <App />
       </Router>
-    </HttpsRedirect>
-  </React.StrictMode>,
+    </React.StrictMode>
+  </HttpsRedirect>,
   document.getElementById('root')
 );

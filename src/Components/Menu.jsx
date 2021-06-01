@@ -70,7 +70,7 @@ const Menu = () => {
           }
           className='dropdown-btn nofocus'
         >
-          Biography
+          'About'
           <Icon style={{ paddingLeft: '5px' }} name='caret down' size='small' />
         </button>
         <div className='dropdown-container' style={bioDropDownStyle}>

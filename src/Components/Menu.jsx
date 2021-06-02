@@ -6,11 +6,11 @@ import { Icon } from 'semantic-ui-react';
 const Menu = () => {
   const [worksHeight, setWorksHeight] = React.useState(0);
   const [bioHeight, setBioHeight] = React.useState(0);
-  //const [screenWidth, setScreenWidth] = React.useState();
+  const [screenWidth, setScreenWidth] = React.useState();
 
-  /* window.addEventListener('resize', (event) => {
+  window.addEventListener('resize', (event) => {
     setScreenWidth(window.innerWidth);
-  }); */
+  });
 
   const worksDropDownStyle = {
     height: worksHeight,
@@ -28,7 +28,7 @@ const Menu = () => {
         </li>
         <button
           onClick={() =>
-            setWorksHeight(worksHeight === 0 || undefined ? 10 * 1.6 + 'em' : 0)
+            setWorksHeight(worksHeight === 0 || undefined ? 9 * 1.6 + 'em' : 0)
           }
           className='dropdown-btn nofocus'
         >
@@ -47,7 +47,9 @@ const Menu = () => {
               <Link to='/works/2017'>2017</Link>
             </li>
             <li>
-              <Link to='/works/2016tm'>2016 Tm-Gallery</Link>
+              <Link to='/works/2016tm'>
+                2016 {screenWidth > 500 ? 'Tm-Gallery' : 'Tm'}
+              </Link>
             </li>
             <li>
               <Link to='/works/2016'>2016</Link>

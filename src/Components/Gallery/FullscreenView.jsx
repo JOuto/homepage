@@ -2,6 +2,7 @@ import React from 'react';
 import '../../Page.css';
 import ImageInfoBar from './ImageInfoBar';
 import cross from '../../Img/cross.png';
+import $ from 'jquery';
 
 const FullscreenView = ({
   setFullScreenView,
@@ -13,6 +14,8 @@ const FullscreenView = ({
   const displayStyle = {
     display: fullScreenView ? 'block' : 'none',
   };
+
+  const height = $('imageCollectionImg').height;
 
   const indexOfNextImg = () => {
     if (imageIndex !== images.length - 1) {
@@ -32,47 +35,51 @@ const FullscreenView = ({
     return (
       <div>
         <div
+          onClick={() => setFullScreenView(false)}
           className='fullScreenDimmer'
           style={displayStyle}
-          onClick={() => setFullScreenView(false)}
         ></div>
 
-        <div className='fullScreenContent' style={displayStyle}>
+        <div
+          className='fullScreenContent'
+          style={displayStyle}
+          
+        >
           <div
             className='closeFullscreenButton'
             onClick={() => setFullScreenView(false)}
           >
             <img src={cross} width='100%' alt='cross'></img>
           </div>
-          <div className='prevNextWrapper'>
-            <div
-              className='prev'
-              onClick={() => {
-                setImageIndex(indexOfPrevImg());
-                console.log(imageIndex);
-              }}
-            />
-            <div
-              className='next'
-              onClick={() => setImageIndex(indexOfNextImg())}
-            />
-          </div>
 
           <ImageInfoBar image={images[imageIndex]} />
+          <div className='imageContainer' style={{ marginTop: '80px' }}>
+            <img
+              className='imageCollectionImg'
+              src={
+                images[imageIndex]
+                  ? images[imageIndex].imgUrl
+                  : '../../Img/18_19/apartment.jpg'
+              }
+              alt='img'
+              /* height='90%' */
 
-          <img
-            className='imageCollectionImg'
-            style={{ paddingTop: '80px' }}
-            src={
-              images[imageIndex]
-                ? images[imageIndex].imgUrl
-                : '../../Img/18_19/apartment.jpg'
-            }
-            alt='img'
-            /* height='90%' */
-
-            onClick={() => setFullScreenView(false)}
-          />
+              onClick={() => setFullScreenView(false)}
+            />
+            <div className='prevNextWrapper' style={{ height: height }}>
+              <div
+                className='prev'
+                onClick={() => {
+                  setImageIndex(indexOfPrevImg());
+                  console.log(imageIndex);
+                }}
+              />
+              <div
+                className='next'
+                onClick={() => setImageIndex(indexOfNextImg())}
+              />
+            </div>
+          </div>
         </div>
       </div>
     );

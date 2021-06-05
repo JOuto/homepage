@@ -92,11 +92,11 @@
   height: 3vw;
   width: 3vw;
   overflow: hidden;
-  z-index: 9998;
+  z-index: 9999;
   border-radius: 0;
   color: white;
   background-color: none !important;
-  opacity: 1;
+
   border: solid 1px white;
   cursor: pointer;
 }
@@ -105,12 +105,7 @@
   position: absolute;
   top: 0;
   left: 0;
-
-  /*  transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  -webkit-transform: translateY(50%);
-  -o-transform: translateY(50%); */
+  z-index: 9999;
 }
 .prevNextWrapper {
   position: absolute;
@@ -136,7 +131,9 @@
 .imageContainer {
   position: relative;
   z-index: 9999;
-  padding-left: -300px;
+  max-height: 100vh;
+  max-width: 100vh;
+  margin-bottom: 30px;
 }
 
 .fullScreenDimmer {
@@ -157,11 +154,13 @@
 }
 
 .fullScreenContent {
-  /*  position: fixed;
-  top: 0;
-  left: 0; */
-  /* height: 100%;
-  width: 100%; */
+  position: fixed;
+
+  top: 80px;
+  left: 0;
+  /* height: 100vh;
+  width: 100vw; */
+
   /* background-color: white; */
   padding-top: 0%;
 

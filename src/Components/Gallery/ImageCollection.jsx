@@ -29,13 +29,15 @@ const ImageCollection = ({ images, fullScreenView, setFullScreenView }) => {
   if (images) {
     return (
       <div className='imageCollectionWrapper'>
-        <FullscreenView
-          setFullScreenView={setFullScreenView}
-          fullScreenView={fullScreenView}
-          images={images}
-          imageIndex={imageIndex}
-          setImageIndex={setImageIndex}
-        />
+        {fullScreenView && (
+          <FullscreenView
+            setFullScreenView={setFullScreenView}
+            fullScreenView={fullScreenView}
+            images={images}
+            imageIndex={imageIndex}
+            setImageIndex={setImageIndex}
+          />
+        )}
         <div className='flexContainer'>
           {images &&
             images.map((img, i) => (

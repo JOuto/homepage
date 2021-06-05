@@ -11,10 +11,6 @@ const FullscreenView = ({
   imageIndex,
   setImageIndex,
 }) => {
-  const displayStyle = {
-    display: fullScreenView ? 'block' : 'none',
-  };
-
   const height = $('imageCollectionImg').height;
 
   const indexOfNextImg = () => {
@@ -37,23 +33,21 @@ const FullscreenView = ({
         <div
           onClick={() => setFullScreenView(false)}
           className='fullScreenDimmer'
-          style={displayStyle}
         ></div>
-
-        <div
-          className='fullScreenContent'
-          style={displayStyle}
-          
+       
+       <div
+          className='closeFullscreenButton'
+          onClick={() => setFullScreenView(false)}
         >
-          <div
-            className='closeFullscreenButton'
-            onClick={() => setFullScreenView(false)}
-          >
-            <img src={cross} width='100%' alt='cross'></img>
-          </div>
+          <img src={cross} width='100%' alt='cross'></img>
+        </div>
 
-          <ImageInfoBar image={images[imageIndex]} />
-          <div className='imageContainer' style={{ marginTop: '80px' }}>
+
+        <ImageInfoBar image={images[imageIndex]} />
+
+
+        <div className='fullScreenContent'>
+          <div className='imageContainer'>
             <img
               className='imageCollectionImg'
               src={
@@ -62,9 +56,6 @@ const FullscreenView = ({
                   : '../../Img/18_19/apartment.jpg'
               }
               alt='img'
-              /* height='90%' */
-
-              onClick={() => setFullScreenView(false)}
             />
             <div className='prevNextWrapper' style={{ height: height }}>
               <div

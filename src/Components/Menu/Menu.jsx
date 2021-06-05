@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import './Menu.css';
-import '../../Page.css';
+
 import { Icon } from 'semantic-ui-react';
 
 const Menu = () => {

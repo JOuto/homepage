@@ -1,7 +1,6 @@
 import FullscreenView from './FullscreenView';
 import React, { useState } from 'react';
 import './Gallery.css';
-import '../../Page.css';
 
 const ImageCollection = ({ images, fullScreenView, setFullScreenView }) => {
   //const [fullScreenView, setFullScreenView] = React.useState(false);

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Gallery.css';
-import '../../Page.css';
+
 import ImageInfoBar from './ImageInfoBar';
 import cross from '../../Img/cross.png';
 import $ from 'jquery';

@@ -1,5 +1,5 @@
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
-import '../Page.css';
+import './NewsletterSubs.css';
 
 const NewsletterSubscribe = ({ setShowNewletterSubs }) => {
   return (

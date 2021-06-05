@@ -3,11 +3,11 @@ import $ from 'jquery';
 import Menu from './Components/Menu/Menu';
 import { useEffect } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
-import News from './News';
-import './Page.css';
+import News from './Components/News/News';
+import './App.css';
 
 import Cv from './Components/CV/CvPage';
-import NewsletterSubscribe from './Components/NewsletterSubs';
+import NewsletterSubscribe from './Components/NewsLetterPopup/NewsletterSubs';
 import Index from './Components/Index';
 
 import ImageCollection from './Components/Gallery/ImageCollection';
@@ -206,9 +206,7 @@ const App = () => {
         </div>
       </div>
 
-      {/*  <div className='footerWrapper'>
-        <footer className='footer'></footer>
-      </div> */}
+    
     </div>
   );
 };

@@ -37,7 +37,7 @@ const ImageCollection = ({ images, fullScreenView, setFullScreenView }) => {
             setImageIndex={setImageIndex}
           />
         )}
-        <div className='flexContainer'>
+        <div className='flexContainer' id='flexContainer'>
           {images &&
             images.map((img, i) => (
               <div className='flexItem' key={i}>

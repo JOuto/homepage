@@ -28,18 +28,19 @@ const FullscreenView = ({
     return images.length - 1;
   };
 
+  $('#flexContainer').css('overflow', 'hidden');
+
+  const close = () => {
+    setFullScreenView(false);
+    $('#flexContainer').css('overflow', 'scroll');
+  };
+
   if (images && imageIndex !== undefined) {
     return (
       <div>
-        <div
-          onClick={() => setFullScreenView(false)}
-          className='fullScreenDimmer'
-        ></div>
+        <div onClick={close} className='fullScreenDimmer'></div>
 
-        <div
-          className='closeFullscreenButton'
-          onClick={() => setFullScreenView(false)}
-        >
+        <div className='closeFullscreenButton' onClick={close}>
           <img src={cross} width='100%' alt='cross'></img>
         </div>
 

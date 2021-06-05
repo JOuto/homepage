@@ -32,6 +32,7 @@
 }
 .fullScreenContainer {
   text-align: center;
+  overflow: hidden;
 }
 .fullScreenDimmer {
   background-color: black;
@@ -52,8 +53,7 @@
   position: fixed;
   width: 100%;
   top: 80px;
-
-  padding-top: 0%;
+  overflow: hidden;
 
   z-index: 9998;
 }

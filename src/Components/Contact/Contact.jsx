@@ -1,3 +1,4 @@
+import './Contact.css';
 const ContactPage = () => {
   return (
     <div className='contact'>

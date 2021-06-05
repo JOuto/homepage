@@ -1,8 +1,7 @@
 import React from 'react';
-import './GalleryControlBar.css';
+import './Gallery.css';
 
 const GalleryControlBar = ({ setImgIndex, imgIndex, images }) => {
- 
   const next = () => {
     if (imgIndex === images.length - 1) {
       return setImgIndex(0);
@@ -15,7 +14,6 @@ const GalleryControlBar = ({ setImgIndex, imgIndex, images }) => {
     }
     setImgIndex(imgIndex - 1);
   };
- 
 
   return (
     <div className='ControlBarWrapper'>
@@ -25,7 +23,6 @@ const GalleryControlBar = ({ setImgIndex, imgIndex, images }) => {
         <span onClick={prev}>PREV</span>
         <span>/</span>
         <span onClick={next}>NEXT</span>
-       
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../Page.css';
+import './News.css';
 
 const News = () => {
   return (

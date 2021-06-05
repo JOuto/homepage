@@ -1,9 +1,9 @@
 import React from 'react';
 import $ from 'jquery';
-import Menu from './Components/Menu';
+import Menu from './Components/Menu/Menu';
 import { useEffect } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
-import News from './Components/News';
+import News from './News';
 import './Page.css';
 
 import Cv from './Components/CV/CvPage';
@@ -11,7 +11,7 @@ import NewsletterSubscribe from './Components/NewsletterSubs';
 import Index from './Components/Index';
 
 import ImageCollection from './Components/Gallery/ImageCollection';
-import ContactPage from './Components/Contact';
+import ContactPage from './Components/Contact/Contact';
 import katariina from './imageCollections/2011';
 import images18_19 from './imageCollections/2018-19';
 import images17_18 from './imageCollections/2017-18';
@@ -24,8 +24,6 @@ import images2016 from './imageCollections/2016';
 
 import newsLogo from './Img/news.png';
 import instaLogo from './Img/insta.png';
-
-
 
 const App = () => {
   const [showNewsletterSubs, setShowNewletterSubs] = React.useState(false);

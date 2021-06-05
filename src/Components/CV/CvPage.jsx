@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Page.css';
+import './Cv.css';
 import CvEn from './CvEn';
 import CvFi from './CvFi';
 

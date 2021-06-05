@@ -1,13 +1,12 @@
 import React from 'react';
 
-import '../../Page.css';
+import './Gallery.css';
 import GalleryControlBar from './GalleryControlBar';
 
 import FullscreenView from './FullscreenView';
 
 const ImageGallery = ({ images }) => {
   const [imgIndex, setImgIndex] = React.useState(0);
-  const [showImgDetails, setShowImgDetails] = React.useState(false);
   const [fullScreenView, setFullScreenView] = React.useState(false);
   const [image, setImage] = React.useState();
 
@@ -46,8 +45,6 @@ const ImageGallery = ({ images }) => {
           alt='img'
           width='85%'
         />
-        {/* 
-        {showImgDetails && <p>{images[imgIndex].title}</p> */}
       </div>
     </div>
   );

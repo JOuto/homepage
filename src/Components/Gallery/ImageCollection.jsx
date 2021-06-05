@@ -1,7 +1,7 @@
 import FullscreenView from './FullscreenView';
 import React, { useState } from 'react';
+import './Gallery.css';
 import '../../Page.css';
-import './GalleryControlBar.css';
 
 const ImageCollection = ({ images, fullScreenView, setFullScreenView }) => {
   //const [fullScreenView, setFullScreenView] = React.useState(false);
@@ -28,7 +28,7 @@ const ImageCollection = ({ images, fullScreenView, setFullScreenView }) => {
 
   if (images) {
     return (
-      <div className='imageCollectionWrapper'>
+      <div>
         {fullScreenView && (
           <FullscreenView
             setFullScreenView={setFullScreenView}

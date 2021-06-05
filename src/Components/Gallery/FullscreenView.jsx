@@ -1,4 +1,5 @@
 import React from 'react';
+import './Gallery.css';
 import '../../Page.css';
 import ImageInfoBar from './ImageInfoBar';
 import cross from '../../Img/cross.png';
@@ -34,17 +35,15 @@ const FullscreenView = ({
           onClick={() => setFullScreenView(false)}
           className='fullScreenDimmer'
         ></div>
-       
-       <div
+
+        <div
           className='closeFullscreenButton'
           onClick={() => setFullScreenView(false)}
         >
           <img src={cross} width='100%' alt='cross'></img>
         </div>
 
-
         <ImageInfoBar image={images[imageIndex]} />
-
 
         <div className='fullScreenContent'>
           <div className='imageContainer'>

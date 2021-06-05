@@ -31,6 +31,10 @@
   /* padding-right: 50px; */
 }
 .fullScreenContainer {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+
   text-align: center;
   overflow: hidden;
 }
@@ -68,7 +72,7 @@
 }
 .closeFullscreenButton {
   font-weight: 1;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   height: 3vw;
@@ -171,7 +175,7 @@
 
   font-size: 0.8vw;
   font-weight: bold;
-  position: absolute;
+  position: fixed;
   top: -2%;
   color: white;
   /* border: solid black 1px; */

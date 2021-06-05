@@ -28,11 +28,11 @@ const FullscreenView = ({
     return images.length - 1;
   };
 
-  $('#flexContainer').css('overflow', 'hidden');
+  $('.contentWrapper').css('overflow', 'hidden');
 
   const close = () => {
     setFullScreenView(false);
-    $('#flexContainer').css('overflow', 'scroll');
+    $('.contentWrapper').css('overflow', 'scroll');
   };
 
   if (images && imageIndex !== undefined) {

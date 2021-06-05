@@ -8,7 +8,7 @@ import './App.css';
 
 import Cv from './Components/CV/CvPage';
 import NewsletterSubscribe from './Components/NewsLetterPopup/NewsletterSubs';
-import Index from './Components/Index';
+import Index from './Components/Home';
 
 import ImageCollection from './Components/Gallery/ImageCollection';
 import ContactPage from './Components/Contact/Contact';
@@ -65,7 +65,7 @@ const App = () => {
     : { width: '78%' };
 
   return (
-    <div className='Apper'>
+    <div className='App'>
       {!fullScreenView && (
         <div>
           <div className='instaLink'>
@@ -92,7 +92,7 @@ const App = () => {
       )}
       <div>
         <div className='menu' style={menuStyle}>
-          <Link to='/' className='indexLink'>
+          <Link to='/' className='homeLink'>
             <div className='logo'>
               {' '}
               <p>JOUNI</p>TONI
@@ -205,8 +205,6 @@ const App = () => {
           </Switch>
         </div>
       </div>
-
-    
     </div>
   );
 };

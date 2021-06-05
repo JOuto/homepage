@@ -1,6 +1,6 @@
 /* MAIN */
 
-.Apper {
+.App {
   z-index: 0;
   height: 100vh;
   overflow: hidden;
@@ -79,10 +79,12 @@
   z-index: 10;
   opacity: 0.6;
 }
-.indexLink {
+
+/* HOMEPAGE */ 
+.homeLink {
   color: black;
 }
-.indexWrapper {
+.homeWrapper {
   overflow: hidden;
   height: 100%;
   position: absolute;

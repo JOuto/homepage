@@ -32,7 +32,7 @@ const FullscreenView = ({
 
   const close = () => {
     setFullScreenView(false);
-    $('.contentWrapper').css('overflow', 'scroll');
+    $('.contentWrapper').css('overflow-y', 'scroll');
   };
 
   if (images && imageIndex !== undefined) {

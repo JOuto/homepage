@@ -205,3 +205,17 @@
   font-weight: 50;
   font-size: 10px;
 }
+
+.closeFullscreenButton {
+  height: 30px;
+  width: 30px;
+}
+
+@media screen and (max-width: 400px) {
+  .contentWrapper {
+    padding-left: 0px;
+  }
+  .imageCollectionThumb {
+    max-width: 200px;
+  }
+}

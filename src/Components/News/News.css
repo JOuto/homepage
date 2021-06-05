@@ -1,7 +1,13 @@
 /* NEWS */
 .newsWrapper {
-    position: absolute;
-    left: 20%;
-    font-size: 1.2vw;
-    text-align: left;
+  position: absolute;
+  left: 20%;
+  font-size: 1.2vw;
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+  .newsWrapper {
+    font-size: 8px;
   }
+}

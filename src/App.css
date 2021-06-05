@@ -14,17 +14,14 @@
 .logo {
   font-size: 4vw;
   text-align: left;
-  
 
   padding-bottom: 30px;
   transition-property: all;
   transition-duration: 0.5s;
   margin-bottom: 10px;
   width: 100%;
-  
 }
 .logo:hover {
-  
   filter: hue-rotate(100deg);
   color: red;
 }
@@ -45,8 +42,6 @@
   width: 78%;
 }
 
-
-
 .flexContainer {
   height: 600px;
   position: relative;
@@ -60,7 +55,7 @@
 }
 .flexItem {
   margin: 20px;
-  
+
   flex-wrap: wrap;
   height: 200px;
   width: 250px;
@@ -68,7 +63,6 @@
   cursor: pointer;
   background-color: white;
 }
-
 
 /* INSTAGRAM LINK */
 .instaLink {
@@ -107,9 +101,9 @@
   width: 20em;
   bottom: 15%;
   border: 1px lightgray solid;
+  background-color: white;
 }
 @media screen and (max-height: 547px) {
- 
   .instaLink {
     display: none;
   }

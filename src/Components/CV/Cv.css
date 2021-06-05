@@ -1,29 +1,44 @@
 /*CV*/
 .cvWrapper {
-    text-align: left;
-    margin-left: 50px;
-    margin-top: 70px;
-    font-size: 1.2vw;
-    line-height: 1.6em;
-    padding-bottom: 30px;
-    padding-left: 30px;
-  }
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 70px;
+  font-size: 1.2vw;
+  line-height: 1.6em;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+.showCvFiButton {
+  cursor: pointer;
+  line-height: 3vw;
+  font-size: 1.6vw;
+  border: solid 1px lightgrey;
+  height: 3vw;
+  width: 3vw;
+  position: fixed;
+  left: 22%;
+  top: 0;
+}
+.cvWrapper h3 {
+  font-size: 1.8vw;
+  line-height: 1.6em;
+}
+.cvWrapper h5 {
+  font-size: 1.4vw;
+  line-height: 1.6em;
+}
+@media screen and (max-width: 800px) {
   .showCvFiButton {
-    cursor: pointer;
-    line-height: 3vw;
-    font-size: 1.6vw;
-    border: solid 1px lightgrey;
-    height: 3vw;
-    width: 3vw;
-    position: fixed;
-    left: 22%;
-    top: 0;
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
   }
-  .cvWrapper h3 {
-    font-size: 1.8vw;
-    line-height: 1.6em;
+
+  .cvWrapper {
+    margin-left: 0px;
+    font-size: 8px;
+    width: 80%;
+    padding-bottom: 30px;
   }
-  .cvWrapper h5 {
-    font-size: 1.4vw;
-    line-height: 1.6em;
-  }
+}

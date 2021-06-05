@@ -134,6 +134,7 @@
 .imageCollectionImg {
   max-height: 80vh;
   max-width: 90%;
+  padding-bottom: 25px;
 }
 .imageCollectionThumb {
   max-height: 100%;

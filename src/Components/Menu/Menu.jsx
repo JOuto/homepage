@@ -36,7 +36,11 @@ const Menu = () => {
           <span>Works</span>
           <Icon style={{ paddingLeft: '5px' }} name='caret down' size='small' />
         </button>
-        <div className='dropdown-container' style={worksDropDownStyle}>
+        <div
+          className='dropdown-container'
+          id='works'
+          style={worksDropDownStyle}
+        >
           <ul className='nav' id='worksDropdown'>
             <li>
               <Link to='/works/201819'>2018-19</Link>

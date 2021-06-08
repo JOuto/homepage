@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cv.css';
 import CvEn from './CvEn';
 import CvFi from './CvFi';
 
 const Cv = () => {
-  const [showCvFi, setShowCvFi] = React.useState(false);
+  const [showCvFi, setShowCvFi] = useState(false);
 
   return (
     <div>

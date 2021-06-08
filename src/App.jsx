@@ -8,7 +8,7 @@ import './App.css';
 
 import Cv from './Components/CV/CvPage';
 import NewsletterSubscribe from './Components/NewsLetterPopup/NewsletterSubs';
-import Index from './Components/Home';
+import Home from './Components/Home/Home';
 
 import ImageCollection from './Components/Gallery/ImageCollection';
 import ContactPage from './Components/Contact/Contact';
@@ -25,9 +25,12 @@ import images2016 from './imageCollections/2016';
 import newsLogo from './Img/news.png';
 import instaLogo from './Img/insta.png';
 
+
 const App = () => {
   const [showNewsletterSubs, setShowNewletterSubs] = React.useState(false);
   const [fullScreenView, setFullScreenView] = React.useState(false);
+
+  
 
   /*   
   Alternative way for dropdown menu:
@@ -200,7 +203,7 @@ const App = () => {
             </Route>
 
             <Route path='/'>
-              <Index />
+              <Home />
             </Route>
           </Switch>
         </div>

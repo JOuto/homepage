@@ -1,49 +1,9 @@
 .contact {
-    font-size: 1.2vw;
-    text-align: center;
+  font-size: 1.2vw;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .contact {
+    font-size: 8px;
   }
-  @media screen and (max-width: 800px) {
-    .menu {
-      font-size: 8px;
-    }
-    .dropdown-btn {
-      font-size: 8px;
-    }
-  
-    .galleryTitle {
-      font-size: 8px;
-    }
-    .credits {
-      font-size: 7px !important;
-      right: -12% !important;
-    }
-    .newsWrapper {
-      font-size: 8px;
-    }
-    .showCvFiButton {
-      font-size: 12px;
-      height: 20px;
-      width: 20px;
-      line-height: 20px;
-    }
-   
-  
-    .contact {
-      font-size: 8px;
-    }
-    .cvWrapper {
-      margin-left: 0px;
-      font-size: 8px;
-      width: 80%;
-      padding-bottom: 30px;
-    }
-  }
-  @media screen and (max-width: 400px) {
-    .contentWrapper {
-      padding-left: 0px;
-    }
-    .imageCollectionThumb {
-      max-width: 200px;
-    }
-  }
-  
+}

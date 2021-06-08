@@ -1,7 +1,8 @@
-import house from '../Img/18_19/apartment.jpg';
+import house from '../../Img/18_19/apartment.jpg';
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 import $ from 'jquery';
+import './Home.css';
 
 const Home = () => {
   const history = useHistory();

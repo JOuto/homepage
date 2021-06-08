@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import './Menu.css';
+import $ from 'jquery';
 
 import { Icon } from 'semantic-ui-react';
+import { ResizeObserver } from 'resize-observer';
 
 const Menu = () => {
   const [worksHeight, setWorksHeight] = React.useState(0);
@@ -13,13 +15,30 @@ const Menu = () => {
     setScreenWidth(window.innerWidth);
   });
 
+  const myObserver = new ResizeObserver((entries) => {
+    entries.forEach((entry) => {
+      if (
+        entry.target.style.height === 14.4 + 'em' &&
+        worksHeight !== 14.4 + 'em'
+      ) {
+        setWorksHeight(14.4 + 'em');
+      }
+    });
+  });
+
+  React.useEffect(() => {
+    const element = document.querySelector('#works');
+    console.log(element);
+    myObserver.observe(element);
+  }, []);
+
   const worksDropDownStyle = {
     height: worksHeight,
   };
 
   const bioDropDownStyle = { height: bioHeight };
 
-  //console.log(screenWidth);
+  React.useEffect(() => {});
 
   return (
     <div>

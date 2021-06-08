@@ -94,7 +94,7 @@ ul.nav li {
   overflow: hidden;
   height: 0px;
   opacity: 1;
-  transition-property: all;
+   transition-property: all;
   transition-duration: 0.5s;
   padding-left: 15px;
 }
@@ -114,5 +114,4 @@ ul.nav li {
     font-size: 7px !important;
     right: -12% !important;
   }
-  
 }

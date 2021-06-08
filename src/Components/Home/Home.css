@@ -1,0 +1,11 @@
+/* HOMEPAGE */ 
+.homeLink {
+    color: black;
+  }
+  .homeWrapper {
+    overflow: hidden;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }

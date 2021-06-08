@@ -26,6 +26,7 @@ const Menu = () => {
     });
   });
 
+ 
   React.useEffect(() => {
     const element = document.querySelector('#works');
     console.log(element);

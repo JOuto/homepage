@@ -25,18 +25,14 @@ import images2016 from './imageCollections/2016';
 import newsLogo from './Img/news.png';
 import instaLogo from './Img/insta.png';
 
-
 const App = () => {
   const [showNewsletterSubs, setShowNewletterSubs] = React.useState(false);
   const [fullScreenView, setFullScreenView] = React.useState(false);
 
-  
-
-  /*   
-  Alternative way for dropdown menu:
+  /* Alternative way for dropdown menu: */
 
   var dropdown = document.getElementsByClassName('dropdown-btn');
-  
+
   useEffect(() => {
     var i;
     for (i = 0; i < dropdown.length; i++) {
@@ -61,8 +57,11 @@ const App = () => {
         }
       });
     }
-  }, [dropdown, fullScreenView]); */
+  }, [dropdown, fullScreenView]);
+  
+  
   const menuStyle = fullScreenView ? { width: '0%' } : { width: '22%' };
+  
   const contentWrapperStyle = fullScreenView
     ? { width: '100%' }
     : { width: '78%' };

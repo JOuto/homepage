@@ -17,6 +17,7 @@
     "fs": "0.0.1-security",
     "heroku-ssl-redirect": "^0.1.1",
     "mkcert": "^1.4.0",
+    "mongoose": "^5.12.14",
     "nodemailer": "^6.6.1"
   },
   "devDependencies": {

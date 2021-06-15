@@ -10,6 +10,7 @@ import Cv from './Components/CV/CvPage';
 import NewsletterSubscribe from './Components/NewsLetterPopup/NewsletterSubs';
 import Home from './Components/Home/Home';
 
+//import Guestbook from './Components/Guestbook/Guestbook';
 import ImageCollection from './Components/Gallery/ImageCollection';
 import ContactPage from './Components/Contact/Contact';
 import katariina from './imageCollections/2011';

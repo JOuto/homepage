@@ -1,16 +1,10 @@
-/* var fs = require('fs');
-var http = require('http');
-var https = require('https');
-var privateKey = fs.readFileSync('certificates/key.pem', 'utf8');
-var certificate = fs.readFileSync('certificates/cert.pem', 'utf8');
-
-var credentials = { key: privateKey, cert: certificate }; */
-
 const sslRedirect = require('heroku-ssl-redirect').default;
 
+const mongoose = require('mongoose');
 const express = require('express');
 const cors = require('cors');
 const ContactRouter = require('./Routes/contact.js');
+const MessagesRouter = require('./Routes/messages.js');
 const dotenv = require('dotenv');
 require('dotenv').config();
 const path = require('path');
@@ -23,12 +17,24 @@ app.use(cors());
 app.use(express.static('build'));
 
 app.use('/api/contact', ContactRouter);
+app.use('/api/messages', MessagesRouter);
 
 app.get('*', (req, res) => {
   console.log(req);
   res.sendFile(path.join(__dirname, '../build/index.html'));
 });
 
+mongoose
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log('connected to MongoDB');
+  })
+  .catch((error) => {
+    console.log('error connection to MongoDB:', error.message);
+  });
 //var httpsServer = https.createServer(credentials, app);
 
 const PORT = process.env.PORT || 3001;

@@ -6,9 +6,13 @@ const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [notification, setNotification] = useState('');
 
   const submit = async (event) => {
     event.preventDefault();
+    if (!message) {
+      return setNotification('add message');
+    }
     const msg = { name: name, email: email, message: message };
 
     try {
@@ -23,6 +27,8 @@ const ContactForm = () => {
       setName('');
       setEmail('');
       setMessage('');
+      setNotification('Message sent. Thank you!');
+      setTimeout(() => setNotification(''), 3000);
     }
   };
 
@@ -55,6 +61,9 @@ const ContactForm = () => {
           <button className='submitButton inputItem' type='submit'>
             Send
           </button>
+          {notification && (
+            <span style={{ color: 'green' }}>{notification}</span>
+          )}
         </div>
       </form>
     </div>

@@ -49,5 +49,5 @@
     "npm": ">=6.0.0"
   },
   "proxy": "https://localhost:3001",
-  "homepage": "https://www.jounitoni.com"
+  "homepage": "."
 }

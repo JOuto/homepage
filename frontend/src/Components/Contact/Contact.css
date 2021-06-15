@@ -22,6 +22,7 @@
 }
 
 .inputItem {
+  box-shadow: none;
   width: 33vw;
   border-radius: 0;
   /*   border: none;

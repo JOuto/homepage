@@ -21,8 +21,17 @@ router.post('/', async (_req, _res) => {
     from: process.env.EMAILUSER,
     to: process.env.EMAILUSER,
     subject: 'Message from ' + body.name,
-    text: body.message + 'email: ' + body.email,
-    html: '<b>' + body.message + '<br/>' + 'email: ' + body.email + '</b>',
+    text:
+      body.message + 'email: ' + body.email + ' ref: homepagemessage123456789',
+    html:
+      '<b>' +
+      body.message +
+      '<br/>' +
+      'email: ' +
+      body.email +
+      '<br/>' +
+      'ref: homepagemessage123456789 ' +
+      '</b>',
   });
 
   _res.send(info);

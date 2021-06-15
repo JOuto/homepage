@@ -52,12 +52,12 @@ const ContactForm = () => {
             placeholder='email'
             value={email}
           ></input>
-          <input
+          <textarea
             onChange={(event) => setMessage(event.target.value)}
             id='messageInput'
             className='inputItem'
             value={message}
-          ></input>
+          ></textarea>
           <button className='submitButton inputItem' type='submit'>
             Send
           </button>

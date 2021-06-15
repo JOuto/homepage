@@ -31,7 +31,7 @@ app.get('*', (req, res) => {
 
 //var httpsServer = https.createServer(credentials, app);
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT ;
 
 /* httpsServer.listen(8443, () => {
   console.log(`server running on port ${PORT}`);

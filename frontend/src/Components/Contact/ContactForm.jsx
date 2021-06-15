@@ -16,10 +16,7 @@ const ContactForm = () => {
     const msg = { name: name, email: email, message: message };
 
     try {
-      const response = await axios.post(
-        'http://localhost:3001/api/contact',
-        msg
-      );
+      const response = await axios.post('/api/contact', msg);
       console.log(response);
     } catch (e) {
       console.log(e);

@@ -1,9 +1,0 @@
-.contact {
-  font-size: 1.2vw;
-  text-align: center;
-}
-@media screen and (max-width: 800px) {
-  .contact {
-    font-size: 8px;
-  }
-}

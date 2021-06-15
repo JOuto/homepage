@@ -1,18 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { BrowserRouter as Router } from 'react-router-dom';
-import 'semantic-ui-css/semantic.min.css';
-import HttpsRedirect from 'react-https-redirect';
+const express = require('express');
+const cors = require('cors');
+const ContactRouter = require('./Routes/contact.js');
+const dotenv = require('dotenv');
+require('dotenv').config();
+/* import path from 'path'; */
 
-ReactDOM.render(
-  <HttpsRedirect>
-    <React.StrictMode>
-      <Router>
-        <App />
-      </Router>
-    </React.StrictMode>
-  </HttpsRedirect>,
-  document.getElementById('root')
-);
+const app = express();
+app.use(express.json());
+app.use(cors());
+app.use(express.static('build'));
+
+app.use('/api/contact', ContactRouter);
+
+app.get('*', (req, res) => {
+  console.log(req);
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+});
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`server running on port ${PORT}`);
+});

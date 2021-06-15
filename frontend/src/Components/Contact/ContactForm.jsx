@@ -1,0 +1,63 @@
+import React, { useState } from 'react';
+import './Contact.css';
+import axios from 'axios';
+
+const ContactForm = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const submit = async (event) => {
+    event.preventDefault();
+    const msg = { name: name, email: email, message: message };
+
+    try {
+      const response = await axios.post(
+        'http://localhost:3001/api/contact',
+        msg
+      );
+      console.log(response);
+    } catch (e) {
+      console.log(e);
+    } finally {
+      setName('');
+      setEmail('');
+      setMessage('');
+    }
+  };
+
+  return (
+    <div className='contactForm'>
+      <form onSubmit={submit}>
+        <div className='inputContainer'>
+          <h4>Contact</h4>
+          <input
+            id='nam'
+            className='inputItem'
+            placeholder='name'
+            onChange={(event) => setName(event.target.value)}
+            type='text'
+            name='name'
+            value={name}
+          />
+          <input
+            onChange={(event) => setEmail(event.target.value)}
+            className='inputItem'
+            placeholder='email'
+            value={email}
+          ></input>
+          <input
+            onChange={(event) => setMessage(event.target.value)}
+            id='messageInput'
+            className='inputItem'
+            value={message}
+          ></input>
+          <button className='submitButton inputItem' type='submit'>
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+};
+export default ContactForm;

@@ -1,0 +1,40 @@
+.contact {
+  font-size: 1.2vw;
+  /* text-align: left; */
+}
+@media screen and (max-width: 800px) {
+  .contact {
+    font-size: 8px;
+  }
+}
+
+/* ContactForm */
+
+.inputContainer {
+  position: absolute;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.inputItem {
+  width: 33vw;
+  border-radius: 0;
+  /*   border: none;
+  background-color: rgb(235, 235, 235);
+  border: red 0.5 solid !important; */
+}
+#messageInput {
+  height: 150px;
+}
+.contactForm {
+  position: relative;
+  margin-top: 50px;
+}
+.submitButton {
+  cursor: pointer;
+}

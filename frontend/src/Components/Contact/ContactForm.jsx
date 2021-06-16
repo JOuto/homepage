@@ -15,6 +15,24 @@ const ContactForm = () => {
     borderRadius: '0px',
     border: 'solid lightgray 1px',
     fontSize: '1.6vh',
+    height: '4vh',
+  };
+  const textAreaStyle = {
+    boxShadow: 'none',
+    color: 'lightgray',
+    width: '33vw',
+    borderRadius: '0px',
+    border: 'solid lightgray 1px',
+    fontSize: '1.6vh',
+    height: '150px',
+  };
+  const buttonStyle = {
+    boxShadow: 'none',
+    color: 'gray',
+    width: '33vw',
+    borderRadius: '0px',
+    border: 'solid lightgray 1px',
+    fontSize: '1.6vh',
   };
 
   const submit = async (event) => {
@@ -55,6 +73,7 @@ const ContactForm = () => {
           />
           <input
             id='inputItem'
+            style={inputStyle}
             onChange={(event) => setEmail(event.target.value)}
             className='inputItem'
             placeholder='email'
@@ -62,13 +81,18 @@ const ContactForm = () => {
           ></input>
           <textarea
             id='inputItem'
+            style={textAreaStyle}
             type='text'
             placeholder='message'
             onChange={(event) => setMessage(event.target.value)}
             className='inputItem'
             value={message}
           ></textarea>
-          <button className='submitButton inputItem' type='submit'>
+          <button
+            style={buttonStyle}
+            className='submitButton inputItem'
+            type='submit'
+          >
             Send
           </button>
           {notification && (

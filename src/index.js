@@ -1,4 +1,4 @@
-const sslRedirect = require('heroku-ssl-redirect').default;
+
 
 const mongoose = require('mongoose');
 const express = require('express');
@@ -11,7 +11,7 @@ const path = require('path');
 
 const app = express();
 
-app.use(sslRedirect());
+
 app.use(express.json());
 app.use(cors());
 app.use(express.static('build'));

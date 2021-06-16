@@ -8,6 +8,15 @@ const ContactForm = () => {
   const [message, setMessage] = useState('');
   const [notification, setNotification] = useState('');
 
+  const inputStyle = {
+    boxShadow: 'none',
+    color: 'lightgray',
+    width: '33vw',
+    borderRadius: '0px',
+    border: 'solid lightgray 1px',
+    fontSize: '1.6vh',
+  };
+
   const submit = async (event) => {
     event.preventDefault();
     if (!message) {
@@ -35,6 +44,7 @@ const ContactForm = () => {
         <div className='inputContainer'>
           <h4>Contact</h4>
           <input
+            style={inputStyle}
             id='nam'
             className='inputItem'
             placeholder='name'
@@ -44,19 +54,25 @@ const ContactForm = () => {
             value={name}
           />
           <input
+            style={inputStyle}
             onChange={(event) => setEmail(event.target.value)}
             className='inputItem'
             placeholder='email'
             value={email}
           ></input>
           <textarea
+            style={inputStyle}
             placeholder='message'
             onChange={(event) => setMessage(event.target.value)}
             id='messageInput'
             className='inputItem'
             value={message}
           ></textarea>
-          <button className='submitButton inputItem' type='submit'>
+          <button
+            style={inputStyle}
+            className='submitButton inputItem'
+            type='submit'
+          >
             Send
           </button>
           {notification && (

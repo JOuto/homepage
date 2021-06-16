@@ -16,12 +16,13 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .inputItem {
+  margin: -2vh;
   box-shadow: none;
   color: lightgray;
   width: 33vw;

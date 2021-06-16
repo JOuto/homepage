@@ -10,7 +10,7 @@ const ContactForm = () => {
 
   const inputStyle = {
     boxShadow: 'none',
-    color: 'rgb(219, 219, 219)',
+    color: 'gray',
     width: '33vw',
     borderRadius: '0px',
     border: 'solid lightgray 1px',
@@ -20,7 +20,7 @@ const ContactForm = () => {
   };
   const textAreaStyle = {
     boxShadow: 'none',
-    color: 'rgb(219, 219, 219)',
+    color: 'gray',
     width: '33vw',
     borderRadius: '0px',
     border: 'solid lightgray 1px',
@@ -33,6 +33,7 @@ const ContactForm = () => {
     width: '33vw',
     borderRadius: '0px',
     border: 'solid lightgray 1px',
+    borderTop: 'none',
     //fontSize: '1.2vw',
     height: '3vw',
   };

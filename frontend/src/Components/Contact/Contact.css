@@ -1,9 +1,17 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 .contact {
   font-size: 1.2vw;
   /* text-align: left; */
 }
 @media screen and (max-width: 800px) {
-  .contact {
+  .contact,
+  .inputContainer {
     font-size: 8px;
   }
 }
@@ -30,9 +38,14 @@
   border: solid lightgray 1px;
   font-size: 1.6vh;
   height: 4vh;
+
   /*   border: none;
   background-color: rgb(235, 235, 235);
   border: red 0.5 solid !important; */
+}
+input:active {
+  border: none;
+  box-shadow: none;
 }
 #messageInput textarea[type='text'] {
   /*  height: 150px; */
@@ -52,17 +65,21 @@
   }
 }
 ::placeholder {
+  color: rgb(180, 180, 180);
+}
+:placeholder-shown {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgb(219, 219, 219);
+
+  color: rgb(180, 180, 180);
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: rgb(219, 219, 219);
+  color: rgb(180, 180, 180);
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: rgb(219, 219, 219);
+  color: rgb(180, 180, 180);
 }

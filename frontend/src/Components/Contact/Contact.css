@@ -35,7 +35,7 @@
   background-color: rgb(235, 235, 235);
   border: red 0.5 solid !important; */
 }
-#messageInput {
+#messageInput textarea[type="text"] {
   height: 150px;
 }
 .contactForm {

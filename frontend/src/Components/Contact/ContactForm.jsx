@@ -55,7 +55,6 @@ const ContactForm = () => {
           />
           <input
             id='inputItem'
-            style={inputStyle}
             onChange={(event) => setEmail(event.target.value)}
             className='inputItem'
             placeholder='email'
@@ -63,17 +62,13 @@ const ContactForm = () => {
           ></input>
           <textarea
             id='inputItem'
-            style={inputStyle}
+            type='text'
             placeholder='message'
             onChange={(event) => setMessage(event.target.value)}
             className='inputItem'
             value={message}
           ></textarea>
-          <button
-            style={inputStyle}
-            className='submitButton inputItem'
-            type='submit'
-          >
+          <button className='submitButton inputItem' type='submit'>
             Send
           </button>
           {notification && (

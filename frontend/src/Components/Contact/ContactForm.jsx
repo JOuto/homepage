@@ -41,7 +41,6 @@ const ContactForm = () => {
       return setNotification('add message');
     }
     const msg = { name: name, email: email, message: message };
-
     try {
       const response = await axios.post('/api/contact', msg);
       console.log(response);

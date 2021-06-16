@@ -24,7 +24,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-
+  padding-bottom: 4vw;
   left: 50%;
   transform: translateX(-50%);
 }

@@ -44,8 +44,8 @@ const ContactForm = () => {
         <div className='inputContainer'>
           <h4>Contact</h4>
           <input
+            id='inputItem'
             style={inputStyle}
-            id='nam'
             className='inputItem'
             placeholder='name'
             onChange={(event) => setName(event.target.value)}
@@ -54,6 +54,7 @@ const ContactForm = () => {
             value={name}
           />
           <input
+            id='inputItem'
             style={inputStyle}
             onChange={(event) => setEmail(event.target.value)}
             className='inputItem'
@@ -61,10 +62,10 @@ const ContactForm = () => {
             value={email}
           ></input>
           <textarea
+            id='inputItem'
             style={inputStyle}
             placeholder='message'
             onChange={(event) => setMessage(event.target.value)}
-            id='messageInput'
             className='inputItem'
             value={message}
           ></textarea>

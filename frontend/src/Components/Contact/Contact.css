@@ -21,7 +21,8 @@
   transform: translateX(-50%);
 }
 
-.inputItem {
+#inputItem input[type='text'] .inputItem,
+#imageInput textarea[type='text'] {
   margin: -2vh;
   box-shadow: none;
   color: lightgray;

@@ -50,6 +50,7 @@ const ContactForm = () => {
             value={email}
           ></input>
           <textarea
+            placeholder='message'
             onChange={(event) => setMessage(event.target.value)}
             id='messageInput'
             className='inputItem'

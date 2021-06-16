@@ -23,8 +23,12 @@
 
 .inputItem {
   box-shadow: none;
+  color: lightgray;
   width: 33vw;
   border-radius: 0;
+  border: solid lightgray 1px;
+  font-size: 1.6vh;
+  height: 4vh;
   /*   border: none;
   background-color: rgb(235, 235, 235);
   border: red 0.5 solid !important; */
@@ -38,4 +42,6 @@
 }
 .submitButton {
   cursor: pointer;
+  color: gray;
+  border-radius: 0px !important;
 }

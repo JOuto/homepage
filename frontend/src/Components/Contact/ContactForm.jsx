@@ -70,11 +70,13 @@ const ContactForm = () => {
             placeholder='name'
             onChange={(event) => setName(event.target.value)}
             type='text'
+            autoComplete='off'
             name='name'
             value={name}
           />
           <input
             id='inputItem'
+            autoComplete='off'
             style={inputStyle}
             onChange={(event) => setEmail(event.target.value)}
             className='inputItem'
@@ -83,6 +85,7 @@ const ContactForm = () => {
           ></input>
           <textarea
             id='inputItem'
+            autoComplete='off'
             style={textAreaStyle}
             type='text'
             placeholder='message'

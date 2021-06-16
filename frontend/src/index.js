@@ -5,13 +5,14 @@ import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
 import HttpsRedirect from 'react-https-redirect';
+import { HashRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <HttpsRedirect>
     <React.StrictMode>
-      <Router>
+      <HashRouter>
         <App />
-      </Router>
+      </HashRouter>
     </React.StrictMode>
   </HttpsRedirect>,
   document.getElementById('root')

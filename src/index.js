@@ -1,5 +1,3 @@
-
-
 const mongoose = require('mongoose');
 const express = require('express');
 const cors = require('cors');
@@ -11,7 +9,6 @@ const path = require('path');
 
 const app = express();
 
-
 app.use(express.json());
 app.use(cors());
 app.use(express.static('build'));
@@ -20,7 +17,7 @@ app.use('/api/contact', ContactRouter);
 app.use('/api/messages', MessagesRouter);
 
 app.get('*', (req, res) => {
-  console.log(req);
+  console.log(path.join(__dirname, '../build/index.html'));
   res.sendFile(path.join(__dirname, '../build/index.html'));
 });
 

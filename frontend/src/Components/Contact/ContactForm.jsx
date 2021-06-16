@@ -10,21 +10,22 @@ const ContactForm = () => {
 
   const inputStyle = {
     boxShadow: 'none',
-    color: 'lightgray',
+    color: 'rgb(219, 219, 219)',
     width: '33vw',
     borderRadius: '0px',
     border: 'solid lightgray 1px',
-    fontSize: '1.6vh',
-    height: '4vh',
+    //fontSize: '1.2vw',
+    height: '3vw',
+    marginBottom: '2vw',
   };
   const textAreaStyle = {
     boxShadow: 'none',
-    color: 'lightgray',
+    color: 'rgb(219, 219, 219)',
     width: '33vw',
     borderRadius: '0px',
     border: 'solid lightgray 1px',
-    fontSize: '1.6vh',
-    height: '150px',
+    //fontSize: '1.2vw',
+    height: '20vw',
   };
   const buttonStyle = {
     boxShadow: 'none',
@@ -32,7 +33,8 @@ const ContactForm = () => {
     width: '33vw',
     borderRadius: '0px',
     border: 'solid lightgray 1px',
-    fontSize: '1.6vh',
+    //fontSize: '1.2vw',
+    height: '3vw',
   };
 
   const submit = async (event) => {

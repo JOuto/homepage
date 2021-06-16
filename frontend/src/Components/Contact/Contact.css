@@ -12,18 +12,17 @@
 
 .inputContainer {
   position: absolute;
-  height: 35vh;
+
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
+
   left: 50%;
   transform: translateX(-50%);
 }
 
 #inputItem input[type='text'] .inputItem,
 #imageInput textarea[type='text'] {
-  margin: -2vh;
   box-shadow: none;
   color: lightgray;
   width: 33vw;
@@ -35,8 +34,8 @@
   background-color: rgb(235, 235, 235);
   border: red 0.5 solid !important; */
 }
-#messageInput textarea[type="text"] {
-  height: 150px;
+#messageInput textarea[type='text'] {
+  /*  height: 150px; */
 }
 .contactForm {
   position: relative;
@@ -46,4 +45,24 @@
   cursor: pointer;
   color: gray;
   border-radius: 0px !important;
+}
+@media screen and (max-width: 800px) {
+  #inputItem input[type='text'] {
+    font-size: 8px;
+  }
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(219, 219, 219);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(219, 219, 219);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(219, 219, 219);
 }

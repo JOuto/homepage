@@ -1,7 +1,7 @@
 import React from 'react';
-import $ from 'jquery';
+//import $ from 'jquery';
 import Menu from './Components/Menu/Menu';
-import { useEffect } from 'react';
+
 import { Switch, Route, Link } from 'react-router-dom';
 import News from './Components/News/News';
 import './App.css';
@@ -61,11 +61,11 @@ const App = () => {
     }
   }, [dropdown, fullScreenView]); */
 
-  const menuStyle = fullScreenView ? { width: '0%' } : { width: '22%' };
+  const menuStyle =
+    fullScreenView || showHomepage ? { width: '0%' } : { width: '22%' };
 
-  const contentWrapperStyle = fullScreenView
-    ? { width: '100%' }
-    : { width: '78%' };
+  const contentWrapperStyle =
+    fullScreenView || showHomepage ? { width: '100%' } : { width: '78%' };
 
   return (
     <div className='App'>
@@ -85,120 +85,119 @@ const App = () => {
           <div className='verticalDivider'></div>
         </div>
       )}
+
       {showNewsletterSubs && (
         <NewsletterSubscribe setShowNewletterSubs={setShowNewletterSubs} />
       )}
+
       {!fullScreenView && !showNewsletterSubs && !showHomepage && (
         <div className='credits'>
           <span>content & web design © Jouni Toni</span>
         </div>
       )}
-      <div>
-        {!showHomepage && (
-          <div className='menu' style={menuStyle}>
-            <Link to='/' className='homeLink'>
-              <div className='logo'>
-                {' '}
-                <p>JOUNI</p>TONI
-              </div>
-            </Link>
-            <Menu />
+
+      <div className='menuWrapper' style={menuStyle}>
+        <Link to='/' className='homeLink'>
+          <div className='logo'>
+            {' '}
+            <p>JOUNI</p>TONI
           </div>
-        )}
+        </Link>
+        <Menu />
+      </div>
 
-        <div className='contentWrapper' style={contentWrapperStyle}>
-          <Switch>
-            <Route path='/contact'>
-              <ContactPage />
-            </Route>
-            <Route path='/news'>
-              <News />
-            </Route>
-            <Route path='/works/201819'>
-              <div>
-                {' '}
-                <p className='galleryTitle'>2018-19</p>
-                <ImageCollection
-                  images={images18_19}
-                  fullScreenView={fullScreenView}
-                  setFullScreenView={setFullScreenView}
-                />
-              </div>
-            </Route>
-            <Route path='/works/2013'>
-              <p className='galleryTitle'>2013</p>
+      <div className='contentWrapper' style={contentWrapperStyle}>
+        <Switch>
+          <Route path='/contact'>
+            <ContactPage />
+          </Route>
+          <Route path='/news'>
+            <News />
+          </Route>
+          <Route path='/works/201819'>
+            <div>
+              {' '}
+              <p className='galleryTitle'>2018-19</p>
               <ImageCollection
-                images={imagesKluuvi}
+                images={images18_19}
                 fullScreenView={fullScreenView}
                 setFullScreenView={setFullScreenView}
               />
-            </Route>
-            <Route path='/works/2011'>
-              <p className='galleryTitle'>2011</p>
-              <ImageCollection
-                images={katariina}
-                fullScreenView={fullScreenView}
-                setFullScreenView={setFullScreenView}
-              />
-            </Route>
-            <Route path='/cv'>
-              <Cv />
-            </Route>
+            </div>
+          </Route>
+          <Route path='/works/2013'>
+            <p className='galleryTitle'>2013</p>
+            <ImageCollection
+              images={imagesKluuvi}
+              fullScreenView={fullScreenView}
+              setFullScreenView={setFullScreenView}
+            />
+          </Route>
+          <Route path='/works/2011'>
+            <p className='galleryTitle'>2011</p>
+            <ImageCollection
+              images={katariina}
+              fullScreenView={fullScreenView}
+              setFullScreenView={setFullScreenView}
+            />
+          </Route>
+          <Route path='/cv'>
+            <Cv />
+          </Route>
 
-            <Route path='/works/2015'>
-              <p className='galleryTitle'>2015</p>
-              <ImageCollection
-                images={images2015}
-                fullScreenView={fullScreenView}
-                setFullScreenView={setFullScreenView}
-              />
-            </Route>
-            <Route path='/works/2016'>
-              <p className='galleryTitle'>2016</p>
-              <ImageCollection
-                images={images2016}
-                fullScreenView={fullScreenView}
-                setFullScreenView={setFullScreenView}
-              />
-            </Route>
-            <Route path='/works/2016tm'>
-              <p className='galleryTitle'>2016 Tm-Gallery</p>
-              <ImageCollection
-                images={images2016tm}
-                fullScreenView={fullScreenView}
-                setFullScreenView={setFullScreenView}
-              />
-            </Route>
-            <Route path='/works/2014'>
-              <p className='galleryTitle'>2014</p>
-              <ImageCollection
-                images={images2014}
-                fullScreenView={fullScreenView}
-                setFullScreenView={setFullScreenView}
-              />
-            </Route>
-            <Route path='/works/2017'>
-              <p className='galleryTitle'>2017</p>
-              <ImageCollection
-                images={images2017}
-                fullScreenView={fullScreenView}
-                setFullScreenView={setFullScreenView}
-              />
-            </Route>
+          <Route path='/works/2015'>
+            <p className='galleryTitle'>2015</p>
+            <ImageCollection
+              images={images2015}
+              fullScreenView={fullScreenView}
+              setFullScreenView={setFullScreenView}
+            />
+          </Route>
+          <Route path='/works/2016'>
+            <p className='galleryTitle'>2016</p>
+            <ImageCollection
+              images={images2016}
+              fullScreenView={fullScreenView}
+              setFullScreenView={setFullScreenView}
+            />
+          </Route>
+          <Route path='/works/2016tm'>
+            <p className='galleryTitle'>2016 Tm-Gallery</p>
+            <ImageCollection
+              images={images2016tm}
+              fullScreenView={fullScreenView}
+              setFullScreenView={setFullScreenView}
+            />
+          </Route>
+          <Route path='/works/2014'>
+            <p className='galleryTitle'>2014</p>
+            <ImageCollection
+              images={images2014}
+              fullScreenView={fullScreenView}
+              setFullScreenView={setFullScreenView}
+            />
+          </Route>
+          <Route path='/works/2017'>
+            <p className='galleryTitle'>2017</p>
+            <ImageCollection
+              images={images2017}
+              fullScreenView={fullScreenView}
+              setFullScreenView={setFullScreenView}
+            />
+          </Route>
 
-            <Route path='/works/201718'>
-              <p className='galleryTitle'>2017-18</p>
-              <ImageCollection
-                images={images17_18}
-                fullScreenView={fullScreenView}
-                setFullScreenView={setFullScreenView}
-              />
-            </Route>
-            <Route path='/'>
-              <Home setShowHomepage={setShowHomepage} />
-            </Route>
-          </Switch>
-        </div>
+          <Route path='/works/201718'>
+            <p className='galleryTitle'>2017-18</p>
+            <ImageCollection
+              images={images17_18}
+              fullScreenView={fullScreenView}
+              setFullScreenView={setFullScreenView}
+            />
+          </Route>
+          <Route path='/'>
+            <Home setShowHomepage={setShowHomepage} />
+          </Route>
+        </Switch>
       </div>
     </div>
   );

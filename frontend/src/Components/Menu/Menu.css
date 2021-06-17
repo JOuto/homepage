@@ -1,4 +1,4 @@
-.menu {
+.menuWrapper {
   position: fixed;
   overflow: hidden;
   padding: 0px;
@@ -100,7 +100,7 @@ ul.nav li {
 }
 
 @media screen and (max-width: 800px) {
-  .menu {
+  .menuWrapper {
     font-size: 8px;
   }
   .dropdown-btn {

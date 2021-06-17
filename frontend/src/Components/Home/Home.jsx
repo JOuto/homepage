@@ -6,11 +6,12 @@ import './Home.css';
 
 const Home = ({ setShowHomepage }) => {
   const history = useHistory();
+
   useEffect(() => setShowHomepage(true), []);
+
   const onClick = () => {
     setShowHomepage(false);
     history.push('works/201819');
-
     setTimeout(() => $('#works').css('height', 9 * 1.6 + 'em'), 100);
   };
 
@@ -24,7 +25,7 @@ const Home = ({ setShowHomepage }) => {
           src={house}
           alt='apartmentBlock'
           width='100%'
-        ></img>
+        />
       </div>
     </div>
   );

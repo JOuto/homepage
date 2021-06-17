@@ -7,12 +7,12 @@
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   float: left;
-  padding-left: 15px;
+
   width: 22%;
   min-width: 80px;
   font-size: 1.2vw;
   padding: 0.2em;
-  padding-left: 20px;
+  padding-left: 1.5em;
 }
 .verticalDivider {
   transform: rotate(-deg);
@@ -94,7 +94,7 @@ ul.nav li {
   overflow: hidden;
   height: 0px;
   opacity: 1;
-   transition-property: all;
+  transition-property: all;
   transition-duration: 0.5s;
   padding-left: 15px;
 }

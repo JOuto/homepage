@@ -29,10 +29,11 @@ import instaLogo from './Img/insta.png';
 const App = () => {
   const [showNewsletterSubs, setShowNewletterSubs] = React.useState(false);
   const [fullScreenView, setFullScreenView] = React.useState(false);
+  const [showHomepage, setShowHomepage] = React.useState(false);
 
   /* Alternative way for dropdown menu: */
 
-  var dropdown = document.getElementsByClassName('dropdown-btn');
+  /* var dropdown = document.getElementsByClassName('dropdown-btn');
 
   useEffect(() => {
     var i;
@@ -58,7 +59,7 @@ const App = () => {
         }
       });
     }
-  }, [dropdown, fullScreenView]);
+  }, [dropdown, fullScreenView]); */
 
   const menuStyle = fullScreenView ? { width: '0%' } : { width: '22%' };
 
@@ -68,7 +69,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      {!fullScreenView && (
+      {!fullScreenView && !showHomepage && (
         <div>
           <div className='instaLink'>
             <a href='http://instagram.com/jouni_toni'>
@@ -87,21 +88,23 @@ const App = () => {
       {showNewsletterSubs && (
         <NewsletterSubscribe setShowNewletterSubs={setShowNewletterSubs} />
       )}
-      {!fullScreenView && !showNewsletterSubs && (
+      {!fullScreenView && !showNewsletterSubs && !showHomepage && (
         <div className='credits'>
           <span>content & web design © Jouni Toni</span>
         </div>
       )}
       <div>
-        <div className='menu' style={menuStyle}>
-          <Link to='/' className='homeLink'>
-            <div className='logo'>
-              {' '}
-              <p>JOUNI</p>TONI
-            </div>
-          </Link>
-          <Menu />
-        </div>
+        {!showHomepage && (
+          <div className='menu' style={menuStyle}>
+            <Link to='/' className='homeLink'>
+              <div className='logo'>
+                {' '}
+                <p>JOUNI</p>TONI
+              </div>
+            </Link>
+            <Menu />
+          </div>
+        )}
 
         <div className='contentWrapper' style={contentWrapperStyle}>
           <Switch>
@@ -191,9 +194,8 @@ const App = () => {
                 setFullScreenView={setFullScreenView}
               />
             </Route>
-
             <Route path='/'>
-              <Home />
+              <Home setShowHomepage={setShowHomepage} />
             </Route>
           </Switch>
         </div>

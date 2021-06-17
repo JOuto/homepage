@@ -1,21 +1,21 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import './Menu.css';
-/* import $ from 'jquery'; */
+import $ from 'jquery';
 
 import { Icon } from 'semantic-ui-react';
-/* import { ResizeObserver } from 'resize-observer'; */
+import { ResizeObserver } from 'resize-observer';
 
 const Menu = () => {
-  /*  const [worksHeight, setWorksHeight] = React.useState(0);
-  const [bioHeight, setBioHeight] = React.useState(0); */
+  const [worksHeight, setWorksHeight] = React.useState(0);
+  const [bioHeight, setBioHeight] = React.useState(0);
   const [screenWidth, setScreenWidth] = React.useState();
 
   window.addEventListener('resize', (event) => {
     setScreenWidth(window.innerWidth);
   });
 
-  /* const myObserver = new ResizeObserver((entries) => {
+  const myObserver = new ResizeObserver((entries) => {
     entries.forEach((entry) => {
       if (
         entry.target.style.height === 14.4 + 'em' &&
@@ -30,13 +30,12 @@ const Menu = () => {
     const element = document.querySelector('#works');
     myObserver.observe(element);
   }, []);
- */
 
-  /* const worksDropDownStyle = {
+  const worksDropDownStyle = {
     height: worksHeight,
   };
 
-  const bioDropDownStyle = { height: bioHeight }; */
+  const bioDropDownStyle = { height: bioHeight };
 
   React.useEffect(() => {});
 
@@ -47,9 +46,9 @@ const Menu = () => {
           <Link to='/news'>News</Link>
         </li>
         <button
-          /* onClick={() =>
+          onClick={() =>
             setWorksHeight(worksHeight === 0 || undefined ? 9 * 1.6 + 'em' : 0)
-          } */
+          }
           className='dropdown-btn nofocus'
         >
           <span>Works</span>
@@ -58,7 +57,7 @@ const Menu = () => {
         <div
           className='dropdown-container'
           id='works'
-          /* style={worksDropDownStyle} */
+          style={worksDropDownStyle}
         >
           <ul className='nav' id='worksDropdown'>
             <li>
@@ -94,15 +93,15 @@ const Menu = () => {
         </div>
 
         <button
-          /* onClick={() =>
+          onClick={() =>
             setBioHeight(bioHeight === 0 || undefined ? 2 * 1.6 + 'em' : 0)
-          } */
+          }
           className='dropdown-btn nofocus'
         >
           About
           <Icon style={{ paddingLeft: '5px' }} name='caret down' size='small' />
         </button>
-        <div className='dropdown-container' /* style={bioDropDownStyle} */>
+        <div className='dropdown-container' style={bioDropDownStyle}>
           <ul className='nav' id='biographyDropdown'>
             <li>
               <Link to='/cv'>CV</Link>

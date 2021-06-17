@@ -29,13 +29,14 @@ const ContactForm = () => {
   };
   const buttonStyle = {
     boxShadow: 'none',
-    color: 'black',
+    color: 'gray',
     width: '33vw',
     borderRadius: '0px',
     border: 'solid lightgray 1px',
     borderTop: 'none',
     //fontSize: '1.2vw',
     height: '3vw',
+    backgroundColor: 'white',
   };
 
   const submit = async (event) => {

@@ -1,7 +1,7 @@
 const CvEn = () => {
   return (
     <div className='cvWrapper'>
-      <h3>JOUNI TAPANI TONI, s. 12.9.1984</h3>
+      <h3>JOUNI TAPANI TONI, b. 12.9.1984</h3>
       <span>jouni.toni@gmail.com </span>
       <span>www.jounitoni.com </span>
       <br />

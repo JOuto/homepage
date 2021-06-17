@@ -10,7 +10,7 @@ const ContactForm = () => {
 
   const inputStyle = {
     boxShadow: 'none',
-    color: 'gray',
+    color: 'black',
     width: '33vw',
     borderRadius: '0px',
     border: 'solid lightgray 1px',
@@ -20,7 +20,7 @@ const ContactForm = () => {
   };
   const textAreaStyle = {
     boxShadow: 'none',
-    color: 'gray',
+    color: 'black',
     width: '33vw',
     borderRadius: '0px',
     border: 'solid lightgray 1px',
@@ -29,7 +29,7 @@ const ContactForm = () => {
   };
   const buttonStyle = {
     boxShadow: 'none',
-    color: 'gray',
+    color: 'black',
     width: '33vw',
     borderRadius: '0px',
     border: 'solid lightgray 1px',
@@ -62,7 +62,8 @@ const ContactForm = () => {
     <div className='contactForm'>
       <form onSubmit={submit}>
         <div className='inputContainer'>
-          <h4>Contact</h4>
+          <h3>Contact</h3>
+          <br />
           <input
             id='inputItem'
             style={inputStyle}

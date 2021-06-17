@@ -211,6 +211,10 @@
   height: 30px;
   width: 30px;
 }
+.galleryTitle {
+  font-size: 8px;
+  height: 4em;
+}
 
 @media screen and (max-width: 400px) {
   .contentWrapper {

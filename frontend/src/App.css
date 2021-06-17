@@ -78,6 +78,11 @@
   z-index: 10;
   opacity: 0.6;
 }
+@media screen and (max-height: 547px) {
+  .instaLink {
+    display: none;
+  }
+}
 
 /* HOMEPAGE */
 .homeLink {
@@ -106,16 +111,12 @@
   border: 1px lightgray solid;
   background-color: white;
 }
+
 @media screen and (max-width: 800px) {
   .credits {
     font-size: 7px !important;
-    right: -12% !important;
-    width: 25em;
-  }
-}
 
-@media screen and (max-height: 547px) {
-  .instaLink {
-    display: none;
+    right: -17% !important;
+    width: 25em;
   }
 }

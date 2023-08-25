@@ -47,7 +47,7 @@ const Menu = () => {
         </li>
         <button
           onClick={() =>
-            setWorksHeight(worksHeight === 0 || undefined ? 9 * 1.6 + 'em' : 0)
+            setWorksHeight(worksHeight === 0 || undefined ? 10 * 1.6 + 'em' : 0)
           }
           className='dropdown-btn nofocus'
         >
@@ -60,6 +60,9 @@ const Menu = () => {
           style={worksDropDownStyle}
         >
           <ul className='nav' id='worksDropdown'>
+          <li>
+              <Link to='/works/2021'>2020-21</Link>
+            </li>
             <li>
               <Link to='/works/201819'>2018-19</Link>
             </li>
@@ -107,7 +110,7 @@ const Menu = () => {
               <Link to='/cv'>CV</Link>
             </li>
             <li className='nofocus'>
-              <Link to='/cv'>About me</Link>
+              <Link to='/aboutMe'>About me</Link>
             </li>
           </ul>
         </div>

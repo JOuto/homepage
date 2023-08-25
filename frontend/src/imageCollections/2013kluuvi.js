@@ -25,14 +25,14 @@ const kluuvi = [
     imgUrl: wiper,
   },
   {
-    title: 'Scale, 2013',
-    technique: 'acrylic on canvas 40x40cm',
-    info: "private collection",
+    title: 'Regeneration, 2013',
+    technique: 'acrylic on canvas 160x120cm',
     imgUrl: regeneration,
   },
   {
-    title: 'Regeneration, 2013',
-    technique: 'acrylic on canvas 160x120cm',
+    title: 'The last painting II, 2013',
+    technique: 'acrylic on canvas 50x40cm',
+    info: "private collection",
     imgUrl: lastPainting,
   },
   {

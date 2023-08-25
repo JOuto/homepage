@@ -5,12 +5,16 @@ const CvFi = () => {
         <span>jouni.toni@gmail.com </span>
         <span>www.jounitoni.com </span>
         <br />
-        instagram.com/jounitoni <br />
+        instagram.com/jouni_toni <br />
         <h5>Opinnot: </h5>
         - Rijksakademie van beeldende kunsten, Amsterdam 2014-2015 <br />- SAMK
         kuvataide Kankaanpää 2006-2010 <br />- University of Ljubljana, Academy of
         Fine Arts 2008 <br />- Oriveden opisto 2004-2005{' '}
-        <h5>Yksityisnäyttelyt: </h5>- Aukio/ City Square, Poriginal galleria 2020
+        <h5>Yksityisnäyttelyt: </h5>
+        - Galleria Ama, Helsinki 2022
+        <br />- Escapist´s dream, Galleria Pogo 2021
+        <br />- Utrechtin kaupunginteatteri, 2021
+        <br />- Aukio/ City Square, Poriginal galleria 2020
         <br />- Cross-section, Galerie SANAA, Utrecht 2019 <br />- Good is up, WOW
         Amsterdam 2018
         <br /> - New works,Taidekeskus Mältinranta, Tampere,2017 <br />- Occupied,
@@ -18,7 +22,10 @@ const CvFi = () => {
         Flat things, Atelier am Eck, Dusseldorf 2012 <br />- Maalauksia, Galleria
         Katariina, Helsinki 2011 <br />- Maalauksia, Kohisevan vintti, Pukkila
         2010 <br />- Fantasia, Galleria Rajatila, Tampere 2008 <br />- Maalauksia,
-        Sampolan kirjasto, Tampere 2005 <h5>Ryhmänäyttelyt: </h5>- Kuhmalahden
+        Sampolan kirjasto, Tampere 2005 <h5>Ryhmänäyttelyt: </h5>
+        - Living remote, Galerie SANAA, Utrecht, 2021
+        - Nature inside out, w/Patra Luostarinen, Tahmelan huvila, Tampere 2021 <br />- Painting a scene, Galleria
+        Saskia, Tampere 2018 <br />- Kuhmalahden
         kesä, Kuhmalahden taidepappila 2019 <br />- Painting a scene, Galleria
         Saskia, Tampere 2018 <br />- Majestic, galerie SANAA, Utrecht 2017 -
         Summer@SANAA, Galerie SANAA, Utrecht 2016 <br />- Clear Scenes on Stage,
@@ -27,7 +34,8 @@ const CvFi = () => {
         Sweden, Los Angeles CA, 2014 <br />- Art Nuuttila, Virrat, 2012 <br />-
         KEHÄ – Uutta maalausta Tampereelta, TR1, Tampere, 2011 <br />- Paremmat
         pidot,SAMK Kuvataide Kankaanpää lopputyönäyttely, Näsilinna, Tampere 2010
-        <h5>Yhteisnäyttelyt: </h5>- Art Fair Suomi, Kaapelitehdas Helsinki, 2019{' '}
+        <h5>Yhteisnäyttelyt: </h5>- Ars Pori 2022 <br />- KunstRAI, Amsterdam, 2022
+        <br />- Art Fair Suomi, Kaapelitehdas Helsinki, 2019{' '}
         <br />- KunstRAI, Amsterdam, 2019 <br />- Art the Hague, Haag, 2018 <br />
         - KunstRAI, Amsterdam, 2018 <br />- BIG Art, Amsterdam, 2017 <br />-
         Rotterdam Contemporary Art Fair, 2017 <br />- Art the Hague, Haag 2016{' '}
@@ -53,8 +61,10 @@ const CvFi = () => {
         taidemuseo <br />- Basware Oy <br />- Gofore Oy <br />- SAMK <br />-
         Tampereen pysäköintitalo Oy <br />- Yksityiskokoelmat
         <h5>Palkinnot: </h5> - Royal Award for Modern Painting, 2015, 1. palkinto
-        <br />- The Art of Basware 2010 , 1. palkinto <h5>Apurahat:</h5> - Taiteen
-        edistämiskeskus, kohdeapuraha 2020 <br />- Taiteen edistämiskeskus,
+        <br />- The Art of Basware 2010 , 1. palkinto <h5>Apurahat:</h5>
+        - Taiteen edistämiskeskus, työskentelyapuraha 2022
+        <br /> - Taiteen edistämiskeskus, korona-apuraha, 2021
+        <br /> - Taiteen edistämiskeskus, kohdeapuraha 2020 <br />- Taiteen edistämiskeskus,
         Pirkanmaan taidetoimikunta 2019 <br />- Taiteen edistämiskeskus,
         näyttöapuraha 2018 <br />- Suomen kulttuurirahasto, keskusrahasto 1-v
         työskentelyapuraha 2016 <br />- Koneen säätiö, 1v työskentelyapuraha, 2015{' '}

@@ -1,6 +1,6 @@
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import './NewsletterSubs.css';
-import cross from '../../Img/cross.png';
+//import cross from '../../Img/cross.png';
 
 const NewsletterSubscribe = ({ setShowNewletterSubs }) => {
   return (

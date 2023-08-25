@@ -5,13 +5,17 @@ import './News.css';
 const News = () => {
   return (
     <div className='newsWrapper'>
+<h4>Current:</h4>
+<br />
+      <p>
+       1.4.-24.4. Solo exhibition in Galleria Ama, Helsinki
+      </p>
       <h4>Upcoming:</h4>
       <br />
       <p>
-        8.7. - 5.8 2021, Summer exhibition in Tahmelan huvila, Tampere with
-        Patra Luostarinen
+        13.4.- 18.4. KunstRai, Amsterdam
       </p>
-      <p>september 2021, Solo show in Galleria Pogo, Helsinki</p>
+      
     </div>
   );
 };

@@ -11,8 +11,8 @@ const Home = ({ setShowHomepage }) => {
 
   const onClick = () => {
     setShowHomepage(false);
-    history.push('works/201819');
-    setTimeout(() => $('#works').css('height', 9 * 1.6 + 'em'), 100);
+    history.push('works/2021');
+    setTimeout(() => $('#works').css('height', 10 * 1.6 + 'em'), 100);
   };
 
   return (

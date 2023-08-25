@@ -9,6 +9,7 @@ import './App.css';
 import Cv from './Components/CV/CvPage';
 import NewsletterSubscribe from './Components/NewsLetterPopup/NewsletterSubs';
 import Home from './Components/Home/Home';
+import AboutMe from "./Components/AboutMe/AboutMe";
 
 //import Guestbook from './Components/Guestbook/Guestbook';
 import ImageCollection from './Components/Gallery/ImageCollection';
@@ -22,6 +23,7 @@ import images2015 from './imageCollections/2015';
 import images2016tm from './imageCollections/2016tm';
 import images2014 from './imageCollections/2014';
 import images2016 from './imageCollections/2016';
+import images2021 from './imageCollections/2021';
 
 import newsLogo from './Img/news.png';
 import instaLogo from './Img/insta.png';
@@ -125,6 +127,15 @@ const App = () => {
               />
             </div>
           </Route>
+          <Route path='/works/2021'>
+            <p className='galleryTitle'>2021</p>
+            <ImageCollection
+              images={images2021}
+              fullScreenView={fullScreenView}
+              setFullScreenView={setFullScreenView}
+            />
+          </Route>
+
           <Route path='/works/2013'>
             <p className='galleryTitle'>2013</p>
             <ImageCollection
@@ -143,6 +154,9 @@ const App = () => {
           </Route>
           <Route path='/cv'>
             <Cv />
+          </Route>
+          <Route path='/aboutMe'>
+            <AboutMe />
           </Route>
 
           <Route path='/works/2015'>

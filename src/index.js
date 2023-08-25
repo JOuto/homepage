@@ -17,7 +17,7 @@ app.use('/api/contact', ContactRouter);
 app.use('/api/messages', MessagesRouter);
 
 app.get('*', (req, res) => {
-  console.log(path.join(__dirname, '../build/index.html'));
+  //console.log(path.join(__dirname, '../build/index.html'));
   res.sendFile(path.join(__dirname, '../build/index.html'));
 });
 

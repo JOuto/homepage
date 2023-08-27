@@ -6,7 +6,7 @@ const News = () => {
   return (
     <div className='newsWrapper'>
       {/* <h4>Current:</h4> */}
-      <br />
+
       <p></p>
       <h4>Upcoming:</h4>
       <br />

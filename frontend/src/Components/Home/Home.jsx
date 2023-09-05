@@ -7,7 +7,7 @@ import './Home.css';
 const Home = ({ setShowHomepage }) => {
   const history = useHistory();
 
-  useEffect(() => setShowHomepage(true), []);
+  useEffect(() => setShowHomepage(true), [setShowHomepage]);
 
   const onClick = () => {
     setShowHomepage(false);

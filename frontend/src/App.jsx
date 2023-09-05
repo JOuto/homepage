@@ -9,7 +9,7 @@ import './App.css';
 import Cv from './Components/CV/CvPage';
 import NewsletterSubscribe from './Components/NewsLetterPopup/NewsletterSubs';
 import Home from './Components/Home/Home';
-import AboutMe from "./Components/AboutMe/AboutMe";
+import AboutMe from './Components/AboutMe/AboutMe';
 
 //import Guestbook from './Components/Guestbook/Guestbook';
 import ImageCollection from './Components/Gallery/ImageCollection';
@@ -24,6 +24,7 @@ import images2016tm from './imageCollections/2016tm';
 import images2014 from './imageCollections/2014';
 import images2016 from './imageCollections/2016';
 import images2021 from './imageCollections/2021';
+import Public from './imageCollections/public';
 
 import newsLogo from './Img/news.png';
 import instaLogo from './Img/insta.png';
@@ -207,6 +208,10 @@ const App = () => {
               fullScreenView={fullScreenView}
               setFullScreenView={setFullScreenView}
             />
+          </Route>
+          <Route path='/works/public'>
+            <p className='galleryTitle'>Public art</p>
+            <Public />
           </Route>
           <Route path='/'>
             <Home setShowHomepage={setShowHomepage} />

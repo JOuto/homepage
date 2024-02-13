@@ -24,6 +24,7 @@ import images2016tm from './imageCollections/2016tm';
 import images2014 from './imageCollections/2014';
 import images2016 from './imageCollections/2016';
 import images2021 from './imageCollections/2021';
+import images2022_23 from './imageCollections/2022-23';
 import Public from './imageCollections/public';
 
 import newsLogo from './Img/news.png';
@@ -127,6 +128,14 @@ const App = () => {
                 setFullScreenView={setFullScreenView}
               />
             </div>
+          </Route>
+          <Route path='/works/202223'>
+            <p className='galleryTitle'>2022-23</p>
+            <ImageCollection
+              images={images2022_23}
+              fullScreenView={fullScreenView}
+              setFullScreenView={setFullScreenView}
+            />
           </Route>
           <Route path='/works/2021'>
             <p className='galleryTitle'>2021</p>

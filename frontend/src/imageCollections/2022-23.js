@@ -50,11 +50,7 @@ const images2021 = [
     imgUrl: audience,
   },
 
-  {
-    title: 'Untitled (defence), 2023',
-    technique: 'acrylic on canvas 80x100 cm',
-    imgUrl: defence,
-  },
+
   {
     title: 'Spring scene II, 2021',
     technique: 'acrylic on canvas 80x100 cm',

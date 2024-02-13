@@ -17,22 +17,21 @@ import woodcutter from '../Img/22_23/Woodcutter.jpg';
 
 const images2021 = [
   {
-    title: 'Dress rehersal (introduction), 2023',
-    technique: 'acrylic on canvas 160x200 cm',
-    imgUrl: introduction,
-  },
-
-  {
     title: 'Fairy tale: once upon a time in...',
     technique: 'acrylic on canvas 160x200 cm',
     imgUrl: once,
+  },
+  {
+    title: 'Dress rehersal (introduction), 2023',
+    technique: 'acrylic on canvas 160x200 cm',
+    imgUrl: introduction,
   },
   {
     title: 'Fairy tale: behind the scenes, 2023',
     technique: 'acrylic on canvas 160x200 cm',
     imgUrl: behind,
   },
-
+ 
   {
     title: 'Dress rehersal (Vertigo), 2023',
     technique: 'acrylic on canvas 160x200 cm',

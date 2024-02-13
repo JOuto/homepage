@@ -5,7 +5,9 @@ const CvEn = () => {
       <span>jouni.toni@gmail.com </span>
       <span>www.jounitoni.com </span>
       <br />
-      instagram.com/jouni_toni <br />
+      instagram.com/jouni_toni <br /><br />
+      <span>Represented by Rademakers Gallery </span>
+      
       <h5>Studies: </h5>
       - Rijksakademie van beeldende kunsten, Amsterdam 2014-2015 <br />- SAMK
       Fine Arts 2006-2010 <br />- University of Ljubljana, Academy of Fine Arts

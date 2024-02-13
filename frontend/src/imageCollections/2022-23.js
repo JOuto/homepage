@@ -51,11 +51,7 @@ const images2021 = [
   },
 
 
-  {
-    title: 'Spring scene II, 2021',
-    technique: 'acrylic on canvas 80x100 cm',
-    imgUrl: spring,
-  },
+  
   {
     title: 'Sticks and stones, 2023',
     technique: 'acrylic on canvas 120x150cm',
@@ -99,6 +95,11 @@ const images2021 = [
     technique: 'acrylic on canvas 80x100 cm',
 
     imgUrl: transitTwilight,
+  },
+  {
+    title: 'Spring scene II, 2021',
+    technique: 'acrylic on canvas 80x100 cm',
+    imgUrl: spring,
   },
 ];
 export default images2021;

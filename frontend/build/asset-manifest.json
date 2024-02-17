@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.30dd6a55.chunk.css",
-    "main.js": "/static/js/main.2bfcb656.chunk.js",
-    "main.js.map": "/static/js/main.2bfcb656.chunk.js.map",
+    "main.js": "/static/js/main.d8292cf5.chunk.js",
+    "main.js.map": "/static/js/main.d8292cf5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d577c52c.js",
     "runtime-main.js.map": "/static/js/runtime-main.d577c52c.js.map",
     "static/css/2.85f7760d.chunk.css": "/static/css/2.85f7760d.chunk.css",
@@ -44,7 +44,7 @@
     "static/media/TransitWelcome.08e44147.jpg": "/static/media/TransitWelcome.08e44147.jpg",
     "static/media/Untitled.3f7876ec.jpg": "/static/media/Untitled.3f7876ec.jpg",
     "static/media/Upside.d8a6c38a.jpg": "/static/media/Upside.d8a6c38a.jpg",
-    "static/media/Vertigo.35c33ee1.jpg": "/static/media/Vertigo.35c33ee1.jpg",
+    "static/media/Vertigo.b5e4c05f.jpg": "/static/media/Vertigo.b5e4c05f.jpg",
     "static/media/Woodcutter.e9cd52fd.jpg": "/static/media/Woodcutter.e9cd52fd.jpg",
     "static/media/aalto.fa810010.jpg": "/static/media/aalto.fa810010.jpg",
     "static/media/aaneton.85c73b34.jpeg": "/static/media/aaneton.85c73b34.jpeg",
@@ -152,6 +152,6 @@
     "static/css/2.85f7760d.chunk.css",
     "static/js/2.f86ecfb1.chunk.js",
     "static/css/main.30dd6a55.chunk.css",
-    "static/js/main.2bfcb656.chunk.js"
+    "static/js/main.d8292cf5.chunk.js"
   ]
 }

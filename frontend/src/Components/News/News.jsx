@@ -10,7 +10,7 @@ const News = () => {
       <p></p>
       <h4>Upcoming:</h4>
       <br />
-      <p>2024 Artcenter Purnu summer exhibition 15.6.-11.8., Orivesi, Finland</p>
+      <p>2024 Art Center Purnu 15.6.- 11.8., Orivesi, Finland</p>
       <br />
       <p>2024 Enter Art Fair, Copenhagen (Rademakers Gallery)</p>
       <br />

@@ -8,6 +8,14 @@ const News = () => {
       {/* <h4>Current:</h4> */}
 
       <p></p>
+      <h4>Current:</h4>
+      <br />
+      <p>
+        2024 "Purple Blues", Elma Cavcic, Jouni Toni, Anne Marie Spijker in
+        Galerie SANAA, Utrecht
+      </p>
+      <br />
+      <br />
       <h4>Upcoming:</h4>
       <br />
       <p>2024 Art Center Purnu 15.6.- 11.8., Orivesi, Finland</p>

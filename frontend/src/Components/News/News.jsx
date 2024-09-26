@@ -28,8 +28,7 @@ const News = () => {
       <p>2024 Enter Art Fair, Copenhagen (Rademakers Gallery)</p>
       <br />
       <p>2024 solo exhibition in Galleria Ama, Helsinki</p>
-      <br />
-      <p>2024 Art Antwerpen (Rademakers Gallery)</p>
+     
     </div>
   );
 };

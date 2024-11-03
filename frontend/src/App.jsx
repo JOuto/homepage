@@ -10,6 +10,7 @@ import Cv from './Components/CV/CvPage';
 import NewsletterSubscribe from './Components/NewsLetterPopup/NewsletterSubs';
 import Home from './Components/Home/Home';
 import AboutMe from './Components/AboutMe/AboutMe';
+import CoursePage from './Components/CoursePage/coursePage';
 
 //import Guestbook from './Components/Guestbook/Guestbook';
 import ImageCollection from './Components/Gallery/ImageCollection';
@@ -114,6 +115,12 @@ const App = () => {
         <Switch>
           <Route path='/contact'>
             <ContactPage />
+          </Route>
+          <Route path='/kurssit'>
+            <CoursePage
+              fullScreenView={fullScreenView}
+              setFullScreenView={setFullScreenView}
+            />
           </Route>
           <Route path='/news'>
             <News />

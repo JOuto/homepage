@@ -31,7 +31,7 @@ const images2021 = [
     technique: 'acrylic on canvas 160x200 cm',
     imgUrl: behind,
   },
- 
+
   {
     title: 'Dress rehersal (Vertigo), 2023',
     technique: 'acrylic on canvas 160x200 cm',
@@ -50,12 +50,15 @@ const images2021 = [
     imgUrl: audience,
   },
 
-
-  
   {
     title: 'Sticks and stones, 2023',
     technique: 'acrylic on canvas 120x150cm',
     imgUrl: sticks,
+  },
+  {
+    title: 'Defence, 2023',
+    technique: 'acrylic on canvas 80x100 cm',
+    imgUrl: defence,
   },
   {
     title: 'Untitled (hat shop), 2022',
@@ -96,6 +99,7 @@ const images2021 = [
 
     imgUrl: transitTwilight,
   },
+
   {
     title: 'Spring scene II, 2021',
     technique: 'acrylic on canvas 80x100 cm',
